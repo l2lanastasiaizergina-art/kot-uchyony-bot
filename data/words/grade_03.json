@@ -1,0 +1,2401 @@
+{
+  "schema_version": 1,
+  "slug": "grade-03-base",
+  "version": 1,
+  "grade": 3,
+  "title": "Орфографический минимум. 3 класс",
+  "description": "Состав слова, приставки и суффиксы, непроизносимые согласные, разделительные знаки и расширение словарного запаса.",
+  "source": "03_класс_Орфографические_словарные_диктанты.docx",
+  "words": [
+    {
+      "id": "g03-424c0f628231",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "солнце",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "лн"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-1d8294ebb501",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "сердце",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-00e1a2a082be",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "честный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "т"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-407b46b47d15",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "честность",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "т"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-658ad67ace18",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "местный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "т"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-1df3947825f2",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "местечко",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "т"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-0f528b28e666",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "известный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "т"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-6288ea0c669c",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "известие",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "т"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-9fd4c44db0a4",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "праздник",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-6ac8f0a320c4",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "праздничный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-ddd7c311a2a0",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "звёздный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-34c59bdedadc",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "звезда",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-b46b96cea13a",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "поздний",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2cc94ee4de2e",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "опоздать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-5bc1aa277be9",
+      "group": "Непроизносимая согласная",
+      "rule": "Проверяй словом, где согласная произносится отчётливо.",
+      "answer": "счастливый",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "т"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Непроизносимая согласная"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-73385fd9bb3f",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "подписать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-a069d6c833a4",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "подсказать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2f92c28407b9",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "отдать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "т"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-bc2815a786ec",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "надрезать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-dd8a7725fcb7",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "обход",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-141d8c324633",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "объезд",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-3cf9604f8a95",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "подъезд",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2d593d4401e9",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "заехать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "з"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-c969a672bc6f",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "переехать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "п"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-5464b639dba4",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "прибежать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "п"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-05c489649649",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "подлететь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "п"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-d4cb69c7e64d",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "отнести",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-884dc6d6f36c",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "внести",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "в"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2f71f97f22ed",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "выбежать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "в"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-6463c582014a",
+      "group": "Приставки",
+      "rule": "Приставка пишется слитно и сохраняет состав.",
+      "answer": "доехать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Приставки"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-c03a7a058c25",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "объявление",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "бъ"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-c40ca2073810",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "съезд",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "ъ"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-4efd5521be00",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "въезд",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "ъ"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-539735b2331a",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "объём",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "бъ"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-934b47565641",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "разъяснить",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "зъ"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-cda805688bcb",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "предъюбилейный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "дъ"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-5090c60084b9",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "семья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-3f6723855b38",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "вьюга",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-b86d95539e1e",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "соловьи",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-7d3641ed0190",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "обезьяна",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-800cc115d8a9",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "барьер",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-c28595c5827c",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "серьёзный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-bc67dfffc3fa",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "интервью",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 7,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-816863294562",
+      "group": "Разделительные Ъ и Ь",
+      "rule": "Ъ — после приставки на согласную; Ь — внутри корня и перед окончанием.",
+      "answer": "бульон",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Разделительные Ъ и Ь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-cb1f55618c94",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "берёзка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "к"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-ba05c359bd3f",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "дорожка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "к"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2a2e549e9037",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "книжка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "к"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-364e843d9fad",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "ложечка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "к"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-aabfe20936a0",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "речка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "к"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-e18103e75a21",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "сестрица",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-ca0beceb18ff",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "умница",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-5030e9b25d49",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "храбрец",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-90cf3e90b796",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "учитель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-b24311387c8f",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "строитель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 7,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2027eaef5890",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "ключик",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-e94057b86ea7",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "замочек",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-f79bf536b825",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "листочек",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-c5c86f45b278",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "грибок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-501ab8943825",
+      "group": "Суффиксы",
+      "rule": "Замечай постоянную часть слова.",
+      "answer": "снежок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Суффиксы"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-ddd5175c06aa",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "грамматика",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-b87f3440bb66",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "орфография",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 7,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-5bcb4ed1b02c",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "словарь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-9eb0601a4c03",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "текст",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-d55433135a44",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "предложение",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-310189b7c70e",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "название",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-1a833542d130",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "заголовок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-75b59620bb50",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "абзац",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-d46643813faf",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "сочинение",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2f18e7dec55e",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "изложение",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-236d10e513ac",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "литература",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-d6f46901d254",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "математика",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-4233aaf2a7d1",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "русский",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-c3db45481e23",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "рисунок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-6a0a982f755f",
+      "group": "Словарные слова: учёба",
+      "rule": "Запоминай слово через значение и морфемный образ.",
+      "answer": "компьютер",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Словарные слова: учёба"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-bcc5866c1b4d",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "транспорт",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-c0a7301052b0",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "автомобиль",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-05db3ecc29ba",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "троллейбус",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-d6a8174eb14b",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "трамвай",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-0cee09ec3a9e",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "метро",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-a87d6d60300d",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "пассажир",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-9d86a3a6de40",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "билет",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-cb4c90bf9ae8",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "вокзал",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-982c02a79ca9",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "шоссе",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-72880af0646e",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "перрон",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-164006a994e7",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "переулок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-b23c34349c47",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "проспект",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-e33a124644eb",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "площадь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-5bdfc64c634d",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "горизонт",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2af206bb342f",
+      "group": "Город и транспорт",
+      "rule": "Соблюдай нормативное написание общеупотребительных слов.",
+      "answer": "расстояние",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Город и транспорт"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-8462f6ab24f9",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "Россия",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-5d677a99bbd5",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "Москва",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-df188519a1c6",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "Волга",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-258d78d6d633",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "отечество",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-d026812c4e11",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "родина",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-baba4eaa8398",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "государство",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-10ad3da9d025",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "столица",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-d068b4749e65",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "республика",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-bbb3492a7793",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "север",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-99ab80be2c13",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "юг",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "ю"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-9efb7886d851",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "восток",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-127f12f56f3f",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "запад",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-44a520990576",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "океан",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-2376d819941a",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "материк",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-61ce5b801a37",
+      "group": "Природа и география",
+      "rule": "Словарное написание + прописная буква в именах собственных.",
+      "answer": "путешествие",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Природа и география"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-af6545df7c03",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "вместе",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-e1cac7592ce2",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "иногда",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-12d5a818904e",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "недавно",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-a6addbbb8918",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "скоро",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-31b47eec175c",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "налево",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-8ad514bb4074",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "направо",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-b91f36fe8d1b",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "впереди",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-970f4bbf4741",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "назад",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-9d2558e6cf38",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "вокруг",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-a69f8282d2a5",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "потому",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-1519b2347f62",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "поэтому",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-a28477796968",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "конечно",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-da4a82b5d8ff",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "интересно",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-f5512aa4973a",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "вежливо",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g03-312b7f7b6827",
+      "group": "Повседневная речь",
+      "rule": "Работай со словом в контексте.",
+      "answer": "аккуратно",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "кк"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:3",
+        "Повседневная речь"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

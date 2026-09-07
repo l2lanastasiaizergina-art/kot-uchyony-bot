@@ -1,0 +1,2341 @@
+{
+  "schema_version": 1,
+  "slug": "grade-04-base",
+  "version": 1,
+  "grade": 4,
+  "title": "Орфографический минимум. 4 класс",
+  "description": "Орфограммы частей речи, личные окончания глагола, -тся/-ться, падежные окончания и устойчивые словарные написания.",
+  "source": "04_класс_Орфографические_словарные_диктанты.docx",
+  "words": [
+    {
+      "id": "g04-93f81e72d01c",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "к деревне",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 9,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-ce0bfcd8f39d",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "по дороге",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 9,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-eedd35a82c6c",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "в тетради",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 9,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-3a5e6831e328",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "на площади",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 9,
+          "end": 10,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-cb5c9c067d69",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "из жизни",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 8,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-5e651068392b",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "о помощи",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 8,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-a7c63b967575",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "к матери",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 8,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-4ac4cf866b72",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "по аллее",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 8,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-aa55befe320b",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "в музее",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 7,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-26bd631b288c",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "в здании",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "ии"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-7feac829404c",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "на станции",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 10,
+          "text": "ии"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-77a438a1ac47",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "о профессии",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 10,
+          "end": 11,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-f941347b5c36",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "без ошибки",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 9,
+          "end": 10,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-f9d9b137d3ee",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "около площадки",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 13,
+          "end": 14,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-12d2e23537dd",
+      "group": "Падежные окончания",
+      "rule": "Проверяй окончание вопросом и типом склонения.",
+      "answer": "у деревни",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 9,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Падежные окончания"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-6fb6b467df36",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "строишь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-c5493c080fe8",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "видишь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-fd5090943204",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "слышишь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-f4f5750dfed3",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "зависишь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-935ac1b7f86c",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "держишь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-19692c3e83a1",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "гонишь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-ce0505a8ded7",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "дышишь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-548b4a3176d5",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "смотришь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-e62d45e8b74f",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "читаешь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-eda3a19bfba2",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "пишешь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-bf30ebb80d6a",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "рисуешь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-2e7a3ae0bce0",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "решаешь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-c7d87ab74413",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "играешь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-4e3ac3bc3a31",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "мечтаешь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-0937a9d83b4f",
+      "group": "Личные окончания глагола",
+      "rule": "Определи спряжение и лицо.",
+      "answer": "знаешь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Личные окончания глагола"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-6b6d1f0574b7",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "учиться",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "ться"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-834d1daf5e54",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "заниматься",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "ться"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-7959c0b2af39",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "стараться",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "ться"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-3962b75ee518",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "улыбаться",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "ться"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-3c5f6cf6a281",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "встречаться",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "ться"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-d53bfd699db2",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "учится",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "тся"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-1697e5ecda23",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "занимается",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 10,
+          "text": "тся"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-8c96783bdecb",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "старается",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "тся"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-ca23fc95f673",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "улыбается",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "тся"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-76c6a0900b46",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "встречается",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 11,
+          "text": "тся"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-bd9eb8ffd204",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "появится",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "тся"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-fdb1bf1b4a69",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "появиться",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "ться"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-89e9cdc84df3",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "вернётся",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "тся"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-44e05f39fc88",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "вернуться",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "ться"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-e1ba7a3bf5b4",
+      "group": "-ТСЯ и -ТЬСЯ",
+      "rule": "Вопрос «что делает?» — ТСЯ; «что делать?» — ТЬСЯ.",
+      "answer": "трудится",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "тся"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "-ТСЯ и -ТЬСЯ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-1a8aefdf0f3e",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "о синем море",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "ем"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-fa2acb4c1de4",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "в зимнем лесу",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "ем"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-f4cac168024e",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "к дальнему дому",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 10,
+          "text": "ему"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-d608f4449ddf",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "с хорошим другом",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "им"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-a05a302d7ac3",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "о ранней весне",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "ей"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-393915e37793",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "у высокого дерева",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 10,
+          "text": "ого"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-cbe220d72579",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "без свежего хлеба",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 11,
+          "text": "его"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-9aa95492659e",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "над синей рекой",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "ей"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-97f6a767b1ef",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "в соседнюю комнату",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 10,
+          "text": "юю"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-9edac8f2844d",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "на последней странице",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 10,
+          "end": 12,
+          "text": "ей"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-6dfd90b0a9f4",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "яркое солнце",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "ое"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-eb4104980cb8",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "тихая ночь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "ая"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-3197f843d231",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "могучий дуб",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "ий"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-6f1357953b48",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "летний день",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "ий"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-e66dae66cd2c",
+      "group": "Безударные окончания прилагательных",
+      "rule": "Сверяй окончание с вопросом.",
+      "answer": "русский язык",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "ий"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Безударные окончания прилагательных"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-e77bc4cb1139",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "аккуратно",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "к"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-3e3d2c1d3571",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "библиотека",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-c74f08fa8af0",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "богатство",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-ecfb4a3c9cd9",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "багаж",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-818d5df692f1",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "вокзал",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-be47cb97d781",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "велосипед",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-02b3d8526985",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "горизонт",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-5b1d8632d00c",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "календарь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-e024a08323fe",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "коллекция",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-18fd14dc21b1",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "команда",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-ce02f4e04169",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "портрет",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-7974b550e4cf",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "правительство",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-dd4965011d5b",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "председатель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-af746c8bb302",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "профессия",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-ac2d6eced392",
+      "group": "Сложные словарные слова",
+      "rule": "Запомни непроверяемые элементы.",
+      "answer": "расстояние",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Сложные словарные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-0edfaa44a88e",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "аккуратный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "кк"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-14c0bdba0282",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "аллея",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "лл"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-7737762d700b",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "аппетит",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "пп"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-704451b3a2b2",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "ассистент",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-d08e9c8ee1e6",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "группа",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "пп"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-ca51bb07df4f",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "касса",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-9ae96c55ba97",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "классный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-d0b96fed07a9",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "коллектив",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "лл"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-e4cf22a1d0e0",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "массаж",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-aabec5f70a95",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "пассажир",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-fabfc3db0b26",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "проффессия",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "фф"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-75769abab543",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "суббота",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "бб"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-3a0ca78596e9",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "территория",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "рр"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-2132d4db1c4b",
+      "group": "Удвоенные согласные",
+      "rule": "Сохраняй обе согласные.",
+      "answer": "хоккей",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "кк"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Удвоенные согласные"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-c85f157d0266",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "сначала",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-32c94001bfcb",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "сейчас",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-41083da83ba7",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "издалека",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 7,
+          "end": 8,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-db33da39c7ec",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "вокруг",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-f423b30c07d6",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "внизу",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-a55bf47b63d7",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "вверху",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-92b0c65752c9",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "направо",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 7,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-2cf8ed126503",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "налево",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-c80ea871ffa8",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "назавтра",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-6595bd364ac7",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "иногда",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-dd1dccf6eec8",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "потом",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-ad503548c3c3",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "пожалуйста",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-189ff6e1dbcc",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "поэтому",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-51fbe82d4097",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "потому что",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-9800a9cc0d1e",
+      "group": "Наречия и служебные слова",
+      "rule": "Слитное и раздельное написание запоминай в контексте.",
+      "answer": "как будто",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 8,
+          "end": 9,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Наречия и служебные слова"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-32f5a7dc5ab7",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "человек",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-cdbbb220149e",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "общество",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-b630841df151",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "культура",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-b3fd23ecf0e8",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "история",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-46198e1474b1",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "государство",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-4d4eb7743c35",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "отечество",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-3550f02640c4",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "гражданин",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-f83b9d03ac72",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "народ",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-cc383872bc65",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "театр",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-4ff944bdfdaf",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "музей",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-c36d2145be38",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "экскурсия",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "рс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "g04-c376f7b12cc4",
+      "group": "Общество и культура",
+      "rule": "Формируй общеучебный словарь.",
+      "answer": "путешествие",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:4",
+        "Общество и культура"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

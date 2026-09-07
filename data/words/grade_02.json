@@ -1,0 +1,2406 @@
+{
+  "schema_version": 1,
+  "slug": "grade-02-base",
+  "version": 1,
+  "grade": 2,
+  "title": "Орфографический минимум. 2 класс",
+  "description": "Проверяемые и непроверяемые гласные, парные согласные, удвоенные согласные, разделительный мягкий знак.",
+  "source": "02_класс_Орфографические_словарные_диктанты.docx",
+  "words": [
+    {
+      "id": "g02-74dca3a4bf04",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "вода",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-306712dfee35",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "водяной",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-bf2f9e7699af",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "леса",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-8cef7fa5cee5",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "лесной",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-138bd8e28e06",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "гора",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-1bb30b6be6d1",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "горный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-1448b6900a03",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "моря",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-9ef9a784d103",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "морской",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-cb2ab40940b7",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "река",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-1654561d6a51",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "речной",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-120c8809401c",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "земля",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-4cca08263a46",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "земляной",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-fc29b42366a6",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "сады",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-d058539d3ecf",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "садовый",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-413b0753137d",
+      "group": "Безударная гласная",
+      "rule": "Измени слово или подбери однокоренное: безударный звук проверяется ударением.",
+      "answer": "трава",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Безударная гласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-75b8cc40a98f",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "дуб",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-a437d50f54c9",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "дубки",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-23f67c12e1d8",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "гриб",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-ba2022c4904a",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "грибной",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-a64201d0b704",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "зуб",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-eb04c66e24aa",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "зубной",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-e117770eaa17",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "снег",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "г"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-2b1b60b00fdb",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "снежок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ж"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-8686d7649269",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "мороз",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "з"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-3e9ee6af7b32",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "морозы",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "з"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-1d67b926b0cc",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "хлеб",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-fafe3d5a2119",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "хлеба",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "б"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-1d132f0c4b67",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "лодка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-cf6d9109dd8c",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "лодочка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-e0eb33b08b77",
+      "group": "Парная согласная",
+      "rule": "Проверяй согласную гласным звуком после неё.",
+      "answer": "ягодка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "д"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Парная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-614432e75008",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "семья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-fd0b63e9e9cf",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "друзья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-6b550cccd62c",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "листья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-4f6bb51e5efd",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "деревья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-c3338d5f3cc3",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "крылья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-8ce257c8c38b",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "стулья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-cc637d706d73",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "платье",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-18419cbd4667",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "варенье",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-3b9d1801530a",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "печенье",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-5088ecc55257",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "вьюга",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-a5c90c9e1b58",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "воробьи",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-f65a5d996c7b",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "соловьи",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-2dfdbbd7aaea",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "муравьи",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-fa6e13544d4a",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "ручьи",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-9abff4e17b3c",
+      "group": "Разделительный Ь",
+      "rule": "После согласной перед Е, Ё, Ю, Я, И пиши разделительный Ь.",
+      "answer": "колосья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Разделительный Ь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-51d1cbc205a5",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "класс",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-39c0eafd76e4",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "касса",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-4bc9d38b4436",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "масса",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-24476528cc0f",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "группа",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "пп"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-69f62a064273",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "суббота",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "бб"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-1dde83c5afc2",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "русский",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-92186429a8cf",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "шоссе",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-bcbed550b9a6",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "аллея",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "лл"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-84d68edb8dbe",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "ванна",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "нн"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-f044f02a62e8",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "теннис",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "нн"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-5d0e55459acd",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "хоккей",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "кк"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-2025c72bea53",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "коллектив",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "лл"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-f25c4459ce66",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "аккуратно",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "кк"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-624fbe331a5b",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "пассажир",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-6b18433074c3",
+      "group": "Удвоенная согласная",
+      "rule": "Две одинаковые согласные нельзя сокращать.",
+      "answer": "рассказ",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "сс"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Удвоенная согласная"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-d2bd4035df31",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "дежурный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-d41b2fe4424c",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "кабинет",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-b631a39d3a90",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "календарь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-80afc04927d8",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "библиотека",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-90533c65e14b",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "диктант",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-0565fea0cf38",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "пример",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-b1d92421c3d0",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "правило",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-41ff578a11ef",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "работа",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-b160c870fbaf",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "учебник",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-c4e38472de1f",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "дневник",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-a7ee0c99e785",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "портфель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-5c1cc33dec90",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "карандаш",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-999081a81dd5",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "пенал",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-5c37cae4247b",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "компьютер",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-a9f64010e022",
+      "group": "Словарные слова: школа",
+      "rule": "Запомни написание целиком.",
+      "answer": "задание",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-2fe32cf963c3",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "человек",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-848551b95c32",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "товарищ",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-bb137ada7735",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "фамилия",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-6abe1f310ea8",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "отец",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        },
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-b2376f8ec9ea",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "мать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-5873b2446c23",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "ребята",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-ae68db13e646",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "девочка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-7530a701a13d",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "мальчик",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-58e797d47f18",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "хозяин",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-912380b139d8",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "сосед",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-8fda784455d7",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "герой",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-01467deb7fdd",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "спасибо",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-235ccf2fc78f",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "пожалуйста",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-d80df2b48f4e",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "здравствуйте",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-b03b60a21456",
+      "group": "Словарные слова: человек",
+      "rule": "Обрати внимание на непроверяемые гласные.",
+      "answer": "до свидания",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Словарные слова: человек"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-affbe4b2c665",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "сегодня",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-c6608ca667c0",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "завтра",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-71b2ca8c181d",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "вчера",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-d215f441c243",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "минута",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-ccabab47ae21",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "секунда",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-0ab9c100c6e6",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "понедельник",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-cf0a4bd1d8ad",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "вторник",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-6fffa8d4a7bb",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "среда",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-c4fb16cae29f",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "четверг",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-a943010765f8",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "пятница",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "я"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-91e21b5e4f88",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "воскресенье",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-91f5088ef9b8",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "сентябрь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-450fc1a333a0",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "октябрь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-d1e43f745470",
+      "group": "Время и календарь",
+      "rule": "Названия дней и месяцев пишутся со строчной буквы.",
+      "answer": "ноябрь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Время и календарь"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-003c75b218af",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "погода",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-169b31f5256c",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "метель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-52b8d609548b",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "ветер",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-210aca5857e2",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "облако",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-902de30dc921",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "горизонт",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-510480bdde34",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "ромашка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-ce78eeeea12d",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "земляника",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        },
+        {
+          "start": 4,
+          "end": 5,
+          "text": "я"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-b3776393e1eb",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "малина",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-c710bcca1388",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "лягушка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "я"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-8b1da7e36375",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "медведь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-1753cdd0966c",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "заяц",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-23390499eed8",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "петух",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-45cae0611c59",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "курица",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g02-72ba0598d86c",
+      "group": "Природа и животные",
+      "rule": "Непроверяемые написания запоминай в словосочетаниях.",
+      "answer": "коньки",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:2",
+        "Природа и животные"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

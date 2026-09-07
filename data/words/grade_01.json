@@ -1,0 +1,2316 @@
+{
+  "schema_version": 1,
+  "slug": "grade-01-base",
+  "version": 1,
+  "grade": 1,
+  "title": "Орфографический минимум. 1 класс",
+  "description": "Звукобуквенные соответствия, сочетания жи—ши, ча—ща, чу—щу, мягкий знак и первые непроверяемые написания.",
+  "source": "01_класс_Орфографические_словарные_диктанты.docx",
+  "words": [
+    {
+      "id": "g01-a16d2f213026",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "жираф",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-c8407addc737",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "жилет",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-f73e5619c428",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "жизнь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-a69f2d9edc67",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "живой",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-1352991038e3",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "житель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-f1f0edabaa93",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "жирный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-8bad102f56d2",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "пружина",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-b71d69c019c3",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "снежинка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-43a44868f909",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "машина",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-1bd2a08b5400",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "шина",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-d5b88eba9a6a",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "шишка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-a1850430b486",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "шить",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-a48670f8d862",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "широкий",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-0e528a01b35d",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "камыши",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-1967acbf9a48",
+      "group": "ЖИ—ШИ",
+      "rule": "Пиши И после Ж и Ш.",
+      "answer": "малыши",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЖИ—ШИ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-11c886e0c78f",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "чашка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-89cebd375a76",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "чайник",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-0c768bce3423",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "часы",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-14a0ce3757f6",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "чаща",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-84d37ea57b06",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "чайка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-43a636c024e5",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "часть",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-83bcbce0f2c8",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "дача",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-7538f0cd3ae8",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "задача",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-23501fe3ce4a",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "туча",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-a97f4a8fa998",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "свеча",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-dd7a6fc1e5c2",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "щавель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-4e3ba6a1eb3a",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "щадить",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-878a7b1c1236",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "роща",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-f757243c3afd",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "пища",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-bb64540c747a",
+      "group": "ЧА—ЩА",
+      "rule": "Пиши А после Ч и Щ.",
+      "answer": "площадь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧА—ЩА"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-ff87a471030b",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "чудо",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-da48835e1748",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "чудеса",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-e09b6c4fdac3",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "чулок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-d439773086e0",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "чугун",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-74d93c01eb49",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "чужой",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-b407e85256b5",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "чутьё",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-b730a5137b6d",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "ищу",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-e9f279d46222",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "тащу",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-fe5d388fa673",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "щука",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-c796a20820ca",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "щупальце",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-a0bfe7d393e4",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "щуриться",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-80fb8cb3853d",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "кричу",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-c97d9f9eb8eb",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "лечу",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-d6796116a52c",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "молчу",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-e535135c23b7",
+      "group": "ЧУ—ЩУ",
+      "rule": "Пиши У после Ч и Щ.",
+      "answer": "ворчу",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "у"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "ЧУ—ЩУ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-e938e575c7a2",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "день",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-227b13f7bbf2",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "пень",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-32eaf53c6b35",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "тень",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-656d0ae7029e",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "огонь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-3558a28cbb99",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "конь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-ee93dd1fce5f",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "лось",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-2c249094964a",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "гусь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-a19057bfecf7",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "дверь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 4,
+          "end": 5,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-ad409db34cb3",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "тетрадь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 7,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-37a42416d537",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "мебель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 5,
+          "end": 6,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-8b2f9d28edea",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "пальто",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-05adffa52759",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "мальчик",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-0ca1e1d4cdd8",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "учитель",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 6,
+          "end": 7,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-8f592c72df2a",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "альбом",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-0079e6f898ec",
+      "group": "Мягкий знак",
+      "rule": "Ь обозначает мягкость согласного или входит в устойчивое буквосочетание.",
+      "answer": "коньки",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "ь"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Мягкий знак"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-47fa38615afb",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "школа",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-c01fc1ec8f01",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "ученик",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-b28d35c6ac15",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "ученица",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-ecf5c20613f8",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "директор",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-e566a2abae25",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "класс",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-29f237fa203d",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "пенал",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-acb4ff67b858",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "карандаш",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-001313ed2c52",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "линейка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-8b3dfd6d21d8",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "резинка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-3762884d267b",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "дежурный",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-23eb07f10c4a",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "рисунок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-d29fec5ad9c8",
+      "group": "Школа",
+      "rule": "Запомни непроверяемые гласные и согласные.",
+      "answer": "спасибо",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Школа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-d02f0e2a0da1",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "родители",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-93605e27e578",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "ребёнок",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-209305aba91b",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "семья",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-ad4153ebc889",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "бабушка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-e7ef82e5f61a",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "дедушка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-3f79dcf6064a",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "девочка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-71ed8662cc50",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "комната",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-cadb39f341b1",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "квартира",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-88971cc9e279",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "кровать",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-80517fd03827",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "посуда",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-1d42c97eb473",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "молоко",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-6568737fbf56",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "обед",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-fd9acd9a2578",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "завтрак",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-bef6b89e6d43",
+      "group": "Дом и семья",
+      "rule": "Словарные слова повседневной речи.",
+      "answer": "ужин",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Дом и семья"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-fd53ee2681d9",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "город",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-b61d5e17e818",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "улица",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-736299d153e0",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "дорога",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-4424afd51728",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "автобус",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-25a2c2dd3de5",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "троллейбус",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-1b5228a55a07",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "вагон",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-d83b4466cc6c",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "метро",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-090e7d586a57",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "остановка",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-3406857a614d",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "светофор",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-b2b455209f16",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "переход",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-ce7b0d9e6bca",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "пешеход",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-be98c8d5a122",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "магазин",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-9ac954c6001c",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "аптека",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-7cb859afec37",
+      "group": "Город и дорога",
+      "rule": "Запомни гласные в корне и удвоенные согласные.",
+      "answer": "вокзал",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Город и дорога"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-4bd73d3fa29c",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "берёза",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "е"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-1d4b93daca33",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "осина",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-d9e7d1b9679a",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "рябина",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "и"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-7f0e09561781",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "ягода",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-6ef4da02373c",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "капуста",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-c9232ece5017",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "морковь",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-aa3e048a7ac0",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "огурец",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 0,
+          "end": 1,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-db1bb3bc3ef8",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "помидор",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-b5aa5dc8e7b6",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "яблоко",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 3,
+          "end": 4,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-855edc748498",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "собака",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-59e3f3b5a591",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "корова",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-cc03775d21dd",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "ворона",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-594cfc2983b1",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "воробей",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-76890b6c78a3",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "сорока",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "о"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "g01-f951f841166d",
+      "group": "Продукты и природа",
+      "rule": "Называй и записывай предметы точно.",
+      "answer": "заяц",
+      "prompt": null,
+      "orthograms": [
+        {
+          "start": 1,
+          "end": 2,
+          "text": "а"
+        }
+      ],
+      "distractors": [],
+      "tags": [
+        "grade:1",
+        "Продукты и природа"
+      ],
+      "difficulty": 1
+    }
+  ]
+}
