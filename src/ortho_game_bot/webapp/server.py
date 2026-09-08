@@ -28,6 +28,15 @@ from ortho_game_bot.database import (
     UserRepository,
 )
 from ortho_game_bot.database.models import ChoiceQuestion
+from ortho_game_bot.english_vocabulary import (
+    TEST_MODES,
+    EnglishVocabularyContent,
+    EnglishVocabularyError,
+    EnglishVocabularyInvalidOptionError,
+    EnglishVocabularyNotFoundError,
+    EnglishVocabularyRepository,
+    EnglishVocabularyStaleAnswerError,
+)
 from ortho_game_bot.game.service import ContentUnavailableError, GameService
 from ortho_game_bot.leader_library import (
     LeaderBookNotFoundError,
@@ -177,6 +186,8 @@ class MiniAppServer:
         leader_library_progress: LeaderLibraryRepository,
         art_culture: ArtCultureContent,
         art_culture_progress: ArtCultureRepository,
+        english_vocabulary: EnglishVocabularyContent,
+        english_vocabulary_progress: EnglishVocabularyRepository,
     ) -> None:
         self.settings = settings
         self.users = users
@@ -186,6 +197,8 @@ class MiniAppServer:
         self.leader_library_progress = leader_library_progress
         self.art_culture = art_culture
         self.art_culture_progress = art_culture_progress
+        self.english_vocabulary = english_vocabulary
+        self.english_vocabulary_progress = english_vocabulary_progress
         self.runner: web.AppRunner | None = None
         self.word_archives: dict[str, Path] = {}
         self.art_culture_archives: dict[str, Path] = {}
@@ -222,6 +235,11 @@ class MiniAppServer:
         app.router.add_post("/api/art/answer", self.art_answer)
         app.router.add_get("/api/art/diagnostic", self.art_diagnostic)
         app.router.add_get("/static/assets/art_culture/{filename}", self.art_culture_image)
+        app.router.add_get("/api/english/catalog", self.english_catalog)
+        app.router.add_post("/api/english/start", self.english_start)
+        app.router.add_post("/api/english/reviews/start", self.english_review_start)
+        app.router.add_get("/api/english/sessions/{session_id}", self.english_session)
+        app.router.add_post("/api/english/answer", self.english_answer)
         app.router.add_get("/static/assets/words/{filename}", self.word_image)
         app.router.add_static("/static/", static_dir, show_index=False)
         self.runner = web.AppRunner(app)
@@ -542,6 +560,149 @@ class MiniAppServer:
             }
         )
 
+    async def english_catalog(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        progress = await self.english_vocabulary_progress.progress(user_id=tg_user.id)
+        due_count = await self.english_vocabulary_progress.due_count(user_id=tg_user.id)
+        levels: list[dict[str, Any]] = []
+        for level in self.english_vocabulary.levels():
+            modes = {
+                mode: {
+                    "label": label,
+                    **progress.get(
+                        (level["code"], mode),
+                        {"rounds": 0, "completed_rounds": 0, "best_correct": 0},
+                    ),
+                }
+                for mode, label in TEST_MODES.items()
+            }
+            levels.append({**level, "modes": modes})
+        return web.json_response(
+            {
+                "product": "Wise Cat English",
+                "subtitle": "480 слов · 6 уровней · 3 режима",
+                "round_size": 10,
+                "review_due_count": due_count,
+                "levels": levels,
+                "modes": [
+                    {"id": mode, "label": label}
+                    for mode, label in TEST_MODES.items()
+                ],
+            }
+        )
+
+    async def english_start(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        try:
+            payload = await request.json()
+            level_code = str(payload["level_code"])
+            mode = str(payload["mode"])
+            self.english_vocabulary.question_ids(level_code, mode)
+            seen = await self.english_vocabulary_progress.seen_question_ids(
+                user_id=tg_user.id,
+                level_code=level_code,
+                mode=mode,
+            )
+            question_ids = self.english_vocabulary.round_question_ids(
+                level_code=level_code,
+                mode=mode,
+                seen_ids=seen,
+                limit=10,
+            )
+            session = await self.english_vocabulary_progress.start(
+                user_id=tg_user.id,
+                level_code=level_code,
+                mode=mode,
+                question_ids=question_ids,
+            )
+        except (KeyError, TypeError, ValueError, EnglishVocabularyError) as exc:
+            raise web.HTTPBadRequest(text=str(exc) or "Выберите уровень и режим") from exc
+        return web.json_response(self._english_session_payload(session))
+
+    async def english_review_start(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        active = await self.english_vocabulary_progress.active_review(user_id=tg_user.id)
+        if active is not None:
+            return web.json_response(self._english_session_payload(active))
+        question_ids = await self.english_vocabulary_progress.due_question_ids(
+            user_id=tg_user.id,
+            limit=10,
+        )
+        if not question_ids:
+            raise web.HTTPConflict(text="Пока нет слов для повторения")
+        session = await self.english_vocabulary_progress.start(
+            user_id=tg_user.id,
+            level_code="REVIEW",
+            mode="mixed",
+            question_ids=question_ids,
+            is_review=True,
+        )
+        return web.json_response(self._english_session_payload(session))
+
+    async def english_session(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        session = await self.english_vocabulary_progress.get_session(
+            user_id=tg_user.id,
+            session_id=request.match_info["session_id"],
+        )
+        if session is None:
+            raise web.HTTPNotFound(text="Раунд английского не найден")
+        return web.json_response(self._english_session_payload(session))
+
+    async def english_answer(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        try:
+            payload = await request.json()
+            session_id = str(payload["session_id"])
+            question_id = str(payload["question_id"])
+            option_id = str(payload["option_id"])
+            answer = self.english_vocabulary.answer(question_id, option_id)
+            result = await self.english_vocabulary_progress.answer(
+                user_id=tg_user.id,
+                session_id=session_id,
+                question_id=question_id,
+                option_id=option_id,
+                is_correct=answer["is_correct"],
+            )
+        except (KeyError, TypeError, ValueError, EnglishVocabularyInvalidOptionError) as exc:
+            raise web.HTTPBadRequest(text="Некорректный ответ") from exc
+        except EnglishVocabularyNotFoundError as exc:
+            raise web.HTTPNotFound(text=str(exc)) from exc
+        except EnglishVocabularyStaleAnswerError as exc:
+            raise web.HTTPConflict(text=str(exc)) from exc
+
+        saved_session = await self.english_vocabulary_progress.get_session(
+            user_id=tg_user.id,
+            session_id=session_id,
+        )
+        score = await self.users.apply_score(
+            telegram_id=tg_user.id,
+            source_type="english_vocabulary",
+            source_id=f"{session_id}:{question_id}",
+            delta=result.points,
+            idempotency_key=f"english-vocabulary:{tg_user.id}:{session_id}:{question_id}",
+            correct_delta=int(result.is_correct),
+            wrong_delta=int(not result.is_correct),
+            games_delta=int(result.finished),
+            streak_after=result.current_streak,
+            metadata={"review": bool((saved_session or {}).get("is_review"))},
+        )
+        updated = await self.english_vocabulary_progress.get_session(
+            user_id=tg_user.id,
+            session_id=session_id,
+        )
+        assert updated is not None
+        response: dict[str, Any] = {
+            **asdict(result),
+            **answer,
+            "total_score": score.total_score,
+        }
+        if result.finished:
+            response["summary"] = self.english_vocabulary_progress.summary(updated)
+        else:
+            response["next_question"] = self._english_question(updated)
+        return web.json_response(response)
+
     @staticmethod
     def _art_mode(request: web.Request) -> tuple[str, str]:
         age_mode = request.query.get("age_mode", "teen")
@@ -814,6 +975,49 @@ class MiniAppServer:
             "position": position,
             "total": len(question_ids),
         }
+
+    def _english_question(self, session: dict[str, Any]) -> dict[str, Any] | None:
+        position = int(session["current_position"])
+        question_ids = session["question_ids"]
+        if position >= len(question_ids):
+            return None
+        return self.english_vocabulary.public_question(
+            str(question_ids[position]),
+            position=position,
+            total=len(question_ids),
+        )
+
+    def _english_session_payload(self, session: dict[str, Any]) -> dict[str, Any]:
+        is_review = bool(session["is_review"])
+        level = (
+            {"code": "REVIEW", "name": "Повторение", "cefr": "1·3·7·14"}
+            if is_review
+            else self.english_vocabulary.level(session["level_code"])
+        )
+        payload: dict[str, Any] = {
+            "session": {
+                "id": session["id"],
+                "level": {
+                    "code": level["code"],
+                    "name": level["name"],
+                    "cefr": level["cefr"],
+                },
+                "mode": session["mode"],
+                "mode_label": TEST_MODES.get(session["mode"], "Повторение ошибок"),
+                "is_review": is_review,
+                "status": session["status"],
+                "position": int(session["current_position"]),
+                "total": len(session["question_ids"]),
+                "correct_count": int(session["correct_count"]),
+                "points": int(session["points"]),
+                "best_streak": int(session["best_streak"]),
+            }
+        }
+        if session["status"] == "completed":
+            payload["summary"] = self.english_vocabulary_progress.summary(session)
+        else:
+            payload["question"] = self._english_question(session)
+        return payload
 
     def _art_session_payload(self, session: dict[str, Any]) -> dict[str, Any]:
         module = self.art_culture.localized_module(session["module_id"], session["language"])

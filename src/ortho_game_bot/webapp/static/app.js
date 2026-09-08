@@ -27,12 +27,21 @@ const state = {
     pending: null,
     diagnostic: null,
   },
+  english: {
+    catalog: null,
+    mode: "en_to_ru",
+    levelCode: null,
+    session: null,
+    question: null,
+    pending: null,
+  },
 };
 const $ = (id) => document.getElementById(id);
 const screens = [
   "loading", "grade-screen", "welcome-screen", "library-screen",
   "library-mission-screen", "library-question-screen", "library-summary",
   "art-screen", "art-question-screen", "art-summary", "art-diagnostic",
+  "english-screen", "english-question-screen", "english-summary",
   "game-screen", "summary",
 ];
 const celebrationColors = ["#ffc83d", "#f7942d", "#26b96b", "#5aa9ff", "#e85d9b"];
@@ -769,6 +778,192 @@ function openArtImage() {
   $("art-image-dialog").showModal();
 }
 
+const englishModeMeta = {
+  en_to_ru: { icon: "🇬🇧→🇷🇺", short: "EN → RU" },
+  spelling: { icon: "✍️", short: "Написание" },
+  ru_to_en: { icon: "🇷🇺→🇬🇧", short: "RU → EN" },
+};
+
+async function openEnglish() {
+  try {
+    const catalog = await api("/api/english/catalog");
+    state.english.catalog = catalog;
+    const completedLevels = catalog.levels.filter((level) =>
+      Object.values(level.modes).some((progress) => progress.completed_rounds > 0)
+    ).length;
+    $("english-counter").textContent = `${completedLevels}/6`;
+    $("english-review-count").textContent = `${catalog.review_due_count} ${catalog.review_due_count === 1 ? "слово ждёт" : "слов ждут"} повторения`;
+    $("english-review-banner").classList.toggle("hidden", catalog.review_due_count === 0);
+    renderEnglishModes();
+    renderEnglishLevels();
+    showScreen("english-screen");
+  } catch (error) { toast(error.message); }
+}
+
+function renderEnglishModes() {
+  const catalog = state.english.catalog;
+  $("english-modes").replaceChildren(...catalog.modes.map((mode) => {
+    const button = document.createElement("button");
+    const meta = englishModeMeta[mode.id];
+    button.className = `english-mode-button ${state.english.mode === mode.id ? "is-active" : ""}`;
+    button.innerHTML = `<span>${meta.icon}</span><b>${escapeHtml(meta.short)}</b>`;
+    button.title = mode.label;
+    button.addEventListener("click", () => {
+      state.english.mode = mode.id;
+      renderEnglishModes();
+      renderEnglishLevels();
+      tg?.HapticFeedback?.selectionChanged?.();
+    });
+    return button;
+  }));
+}
+
+function renderEnglishLevels() {
+  const mode = state.english.mode;
+  $("english-levels").replaceChildren(...state.english.catalog.levels.map((level) => {
+    const progress = level.modes[mode];
+    const hasProgress = progress.completed_rounds > 0;
+    const button = document.createElement("button");
+    button.className = `english-level-card ${hasProgress ? "has-progress" : ""}`;
+    button.style.setProperty("--level-color", level.color);
+    const status = hasProgress ? `Лучший ${progress.best_correct}/10` : "Начать";
+    button.innerHTML = `
+      <span class="english-level-badge"><b>${escapeHtml(level.cefr)}</b><small>${escapeHtml(level.code)}</small></span>
+      <span class="english-level-copy"><b>${escapeHtml(level.name)}</b><small>${escapeHtml(level.descriptor)}</small></span>
+      <span class="english-level-status">${escapeHtml(status)}</span>`;
+    button.addEventListener("click", () => startEnglishRound(level.code));
+    return button;
+  }));
+}
+
+function loadEnglishSession(data) {
+  state.english.session = data.session;
+  state.english.question = data.question || null;
+  state.english.pending = null;
+  if (data.summary) showEnglishSummary(data.summary);
+  else renderEnglishQuestion();
+}
+
+async function startEnglishRound(levelCode) {
+  state.english.levelCode = levelCode;
+  try {
+    const data = await api("/api/english/start", {
+      method: "POST",
+      body: JSON.stringify({ level_code: levelCode, mode: state.english.mode }),
+    });
+    loadEnglishSession(data);
+    tg?.HapticFeedback?.impactOccurred("light");
+  } catch (error) { toast(error.message); }
+}
+
+async function startEnglishReview() {
+  try {
+    const data = await api("/api/english/reviews/start", { method: "POST", body: "{}" });
+    loadEnglishSession(data);
+    tg?.HapticFeedback?.impactOccurred("light");
+  } catch (error) { toast(error.message); }
+}
+
+function englishModeLabel(mode) {
+  return state.english.catalog?.modes.find((item) => item.id === mode)?.label || "Повторение ошибок";
+}
+
+function renderEnglishQuestion() {
+  const q = state.english.question;
+  const session = state.english.session;
+  const number = q.position + 1;
+  $("english-progress-label").textContent = `${number} из ${q.total}`;
+  $("english-progress-fill").style.width = `${(number / q.total) * 100}%`;
+  $("english-score-label").textContent = `${session.points} ⭐`;
+  $("english-level-chip").textContent = `${q.cefr} · ${q.level}`;
+  $("english-mode-chip").textContent = englishModeLabel(q.type);
+  $("english-theme").textContent = `Юнит ${q.unit} · ${q.theme}`;
+  $("english-instruction").textContent = q.instruction;
+  $("english-prompt").textContent = q.prompt;
+  $("english-cat-message").textContent = session.is_review ? "Вспомни слово — так память станет сильнее" : "Выбери один правильный ответ";
+  $("english-question-cat").src = "/static/assets/cat-hint.webp";
+  $("english-answers").replaceChildren(...q.options.map((option) => {
+    const button = document.createElement("button");
+    button.className = "english-answer-button";
+    button.innerHTML = `<span>${escapeHtml(option.id)}</span><b>${escapeHtml(option.text)}</b>`;
+    button.addEventListener("click", () => submitEnglishAnswer(option));
+    return button;
+  }));
+  showScreen("english-question-screen");
+}
+
+async function submitEnglishAnswer(option) {
+  document.querySelectorAll(".english-answer-button").forEach((button) => { button.disabled = true; });
+  const q = state.english.question;
+  try {
+    const data = await api("/api/english/answer", {
+      method: "POST",
+      body: JSON.stringify({
+        session_id: state.english.session.id,
+        question_id: q.id,
+        option_id: option.id,
+      }),
+    });
+    state.english.pending = { ...data, selectedText: option.text };
+    state.english.session.points += data.points;
+    state.english.session.correct_count = data.correct_count;
+    state.english.session.best_streak = data.best_streak;
+    showEnglishFeedback(state.english.pending);
+  } catch (error) {
+    toast(error.message);
+    document.querySelectorAll(".english-answer-button").forEach((button) => { button.disabled = false; });
+  }
+}
+
+function showEnglishFeedback(result) {
+  const correct = result.is_correct;
+  const streak = result.current_streak;
+  const card = $("english-feedback-card");
+  card.classList.remove("is-correct", "is-streak", "is-wrong");
+  card.classList.add(correct ? (streak >= 3 ? "is-streak" : "is-correct") : "is-wrong");
+  $("english-feedback-cat").src = `/static/assets/cat-${correct ? (streak >= 3 ? "streak" : "correct") : "wrong"}.webp`;
+  $("english-feedback-title").textContent = correct ? (streak >= 3 ? `Серия ${streak}!` : "Верно!") : "Запомним вместе";
+  $("english-selected-answer").classList.toggle("hidden", correct);
+  $("english-selected-answer").textContent = correct ? "" : `Твой ответ: ${result.selectedText}`;
+  $("english-correct-answer").textContent = result.correct_answer;
+  $("english-explanation").textContent = result.explanation;
+  $("english-points").textContent = `${result.points > 0 ? "+" : ""}${result.points} очков`;
+  $("english-feedback-next").textContent = result.finished ? "Посмотреть результат" : "Продолжить";
+  if (correct) celebrate($("english-feedback-celebration"), result.finished || streak >= 3);
+  else resetCelebration($("english-feedback-celebration"));
+  $("english-feedback").classList.remove("hidden");
+  tg?.HapticFeedback?.notificationOccurred(correct ? "success" : "warning");
+}
+
+function nextEnglishQuestion() {
+  const result = state.english.pending;
+  $("english-feedback").classList.add("hidden");
+  resetCelebration($("english-feedback-celebration"));
+  if (result.next_question) {
+    state.english.question = result.next_question;
+    state.english.session.position = result.next_question.position;
+    renderEnglishQuestion();
+    return;
+  }
+  if (Number.isInteger(result.total_score)) state.user.total_score = result.total_score;
+  showEnglishSummary(result.summary);
+}
+
+function showEnglishSummary(summary) {
+  const session = state.english.session;
+  const excellent = summary.percent >= 80;
+  $("english-summary-cat").src = `/static/assets/cat-${excellent ? "winner" : "support"}.webp`;
+  $("english-summary-kicker").textContent = summary.is_review ? "Повторение завершено" : "Раунд завершён";
+  $("english-summary-title").textContent = summary.is_review ? "Память стала сильнее!" : `${session.level.name}: результат`;
+  $("english-summary-percent").textContent = `${summary.percent}%`;
+  $("english-summary-verdict").textContent = excellent ? "Отличный результат!" : "Ошибки вернутся на повторение";
+  $("english-summary-correct").textContent = `${summary.correct_count}/${summary.questions_total}`;
+  $("english-summary-streak").textContent = `${summary.best_streak} 🔥`;
+  $("english-summary-points").textContent = `${summary.points >= 0 ? "+" : ""}${summary.points} ⭐`;
+  $("english-play-again").classList.toggle("hidden", summary.is_review);
+  showScreen("english-summary");
+}
+
 async function bootstrap() {
   renderGrades();
   try {
@@ -784,6 +979,13 @@ async function bootstrap() {
 $("start-game").addEventListener("click", startGame);
 $("open-library").addEventListener("click", openLibrary);
 $("open-art").addEventListener("click", openArt);
+$("open-english").addEventListener("click", openEnglish);
+$("english-home").addEventListener("click", openWelcome);
+$("english-question-back").addEventListener("click", openEnglish);
+$("english-review-banner").addEventListener("click", startEnglishReview);
+$("english-feedback-next").addEventListener("click", nextEnglishQuestion);
+$("english-play-again").addEventListener("click", () => startEnglishRound(state.english.levelCode));
+$("english-summary-back").addEventListener("click", openEnglish);
 $("art-home").addEventListener("click", openWelcome);
 $("art-question-back").addEventListener("click", loadArtCatalog);
 $("open-art-diagnostic").addEventListener("click", openArtDiagnostic);

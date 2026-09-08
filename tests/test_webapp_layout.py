@@ -23,3 +23,19 @@ def test_telegram_overlay_and_wrong_answer_reaction() -> None:
     assert "disableVerticalSwipes" in script
     assert ': "wrong"' in script
     assert (STATIC_DIR / "assets" / "cat-wrong.webp").is_file()
+
+
+def test_english_section_has_three_modes_and_mobile_question_grid() -> None:
+    markup = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    script = (STATIC_DIR / "app.js").read_text(encoding="utf-8")
+    styles = (STATIC_DIR / "styles.css").read_text(encoding="utf-8")
+    assert 'id="open-english"' in markup
+    assert 'id="english-screen"' in markup
+    assert 'id="english-question-screen"' in markup
+    assert 'id="english-feedback"' in markup
+    assert 'id="english-summary"' in markup
+    assert "en_to_ru" in script
+    assert "spelling" in script
+    assert "ru_to_en" in script
+    assert ".english-question-layout { height: 100svh; min-height: 0;" in styles
+    assert ".english-answers { flex: 1 1 auto; min-height: 0; display: grid;" in styles

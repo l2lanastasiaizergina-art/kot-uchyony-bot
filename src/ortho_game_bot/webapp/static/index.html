@@ -47,6 +47,11 @@
           <span><b>Мировое искусство</b><small>27 разделов · 405 вопросов · RU/EN/KZ</small></span>
           <i>›</i>
         </button>
+        <button id="open-english" class="module-card english-module">
+          <span class="module-icon">🇬🇧</span>
+          <span><b>Английские слова</b><small>6 уровней · 480 слов · 3 режима</small></span>
+          <i>›</i>
+        </button>
       </div>
     </section>
 
@@ -234,6 +239,84 @@
       <button id="art-image-close" class="icon-button" aria-label="Закрыть">×</button>
       <img id="art-dialog-image" alt="">
     </dialog>
+
+    <section id="english-screen" class="screen english-shell hidden">
+      <header class="english-header">
+        <button id="english-home" class="icon-button" aria-label="На главную">‹</button>
+        <div>
+          <span class="section-kicker">Wise Cat English</span>
+          <h1>Английские слова</h1>
+        </div>
+        <b id="english-counter" class="library-counter">0/6</b>
+      </header>
+      <div class="english-hero">
+        <img src="/static/assets/cat-hint.webp" alt="Кот Учёный изучает английский">
+        <div><b>От Beginner до Advanced</b><span>Выбери режим и свой уровень. Один раунд — 10 вопросов.</span></div>
+      </div>
+      <button id="english-review-banner" class="review-banner english-review-banner hidden">
+        <span>🧠</span><span><b>Повторить ошибки</b><small id="english-review-count">Слова ждут повторения</small></span><i>›</i>
+      </button>
+      <section class="english-mode-section">
+        <h2>1. Выбери режим</h2>
+        <div id="english-modes" class="english-mode-grid" aria-label="Режим английского"></div>
+      </section>
+      <section class="english-level-section">
+        <h2>2. Выбери уровень</h2>
+        <div id="english-levels" class="english-level-list" aria-label="Уровни английского"></div>
+      </section>
+    </section>
+
+    <section id="english-question-screen" class="screen english-question-layout hidden">
+      <header class="game-header">
+        <button id="english-question-back" class="icon-button" aria-label="Назад к уровням">‹</button>
+        <div class="progress-wrap">
+          <div class="progress-label"><span id="english-progress-label">1 из 10</span><b id="english-score-label">0 ⭐</b></div>
+          <div class="progress-track"><div id="english-progress-fill" class="english-progress-fill"></div></div>
+        </div>
+      </header>
+      <div class="question-cat-row english-cat-row">
+        <img id="english-question-cat" src="/static/assets/cat-hint.webp" alt="Кот Учёный задаёт вопрос">
+        <span id="english-cat-message">Выбери один правильный ответ</span>
+      </div>
+      <div class="english-question-meta">
+        <span id="english-level-chip">A1 · Beginner</span>
+        <b id="english-mode-chip">Английский → русский</b>
+      </div>
+      <section class="english-question-card">
+        <span id="english-theme" class="story-eyebrow">Семья</span>
+        <small id="english-instruction">Выбери правильный перевод.</small>
+        <h2 id="english-prompt">mother</h2>
+      </section>
+      <div id="english-answers" class="english-answers" aria-label="Варианты ответа"></div>
+    </section>
+
+    <section id="english-feedback" class="feedback hidden" aria-live="assertive">
+      <div id="english-feedback-card" class="feedback-card english-feedback-card">
+        <div id="english-feedback-celebration" class="celebration" aria-hidden="true"></div>
+        <img id="english-feedback-cat" src="/static/assets/cat-correct.webp" alt="Реакция Кота Учёного">
+        <p id="english-feedback-title" class="feedback-title">Верно!</p>
+        <p id="english-selected-answer" class="selected-answer hidden"></p>
+        <div class="correct-label">Правильный ответ</div>
+        <div id="english-correct-answer" class="correct-word english-correct-answer">mother</div>
+        <p id="english-explanation" class="library-explanation"></p>
+        <p id="english-points" class="points-line">+10 очков</p>
+        <button id="english-feedback-next" class="primary-button">Продолжить</button>
+      </div>
+    </section>
+
+    <section id="english-summary" class="screen english-summary hidden">
+      <div class="cat-stage winner"><img id="english-summary-cat" src="/static/assets/cat-winner.webp" alt="Кот Учёный празднует"></div>
+      <span id="english-summary-kicker" class="section-kicker">Раунд завершён</span>
+      <h1 id="english-summary-title">Отличная работа!</h1>
+      <div class="english-result-score"><b id="english-summary-percent">0%</b><span id="english-summary-verdict">Продолжай!</span></div>
+      <div class="summary-card">
+        <div><span>Правильно</span><b id="english-summary-correct">0/10</b></div>
+        <div><span>Лучшая серия</span><b id="english-summary-streak">0 🔥</b></div>
+        <div><span>Очки за раунд</span><b id="english-summary-points">0 ⭐</b></div>
+      </div>
+      <button id="english-play-again" class="primary-button">Ещё раунд</button>
+      <button id="english-summary-back" class="secondary-button">К уровням</button>
+    </section>
 
     <section id="game-screen" class="screen game-layout hidden">
       <header class="game-header">

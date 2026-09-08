@@ -17,6 +17,10 @@ from ortho_game_bot.database import (
     GameRepository,
     UserRepository,
 )
+from ortho_game_bot.english_vocabulary import (
+    EnglishVocabularyContent,
+    EnglishVocabularyRepository,
+)
 from ortho_game_bot.game.service import GameService
 from ortho_game_bot.handlers import common_router, game_router
 from ortho_game_bot.leader_library import LeaderLibraryContent, LeaderLibraryRepository
@@ -65,6 +69,8 @@ async def main() -> None:
     leader_library_progress = LeaderLibraryRepository(database)
     art_culture = ArtCultureContent(settings.art_culture_path)
     art_culture_progress = ArtCultureRepository(database)
+    english_vocabulary = EnglishVocabularyContent(settings.english_vocabulary_path)
+    english_vocabulary_progress = EnglishVocabularyRepository(database)
 
     mini_app = MiniAppServer(
         settings=settings,
@@ -75,6 +81,8 @@ async def main() -> None:
         leader_library_progress=leader_library_progress,
         art_culture=art_culture,
         art_culture_progress=art_culture_progress,
+        english_vocabulary=english_vocabulary,
+        english_vocabulary_progress=english_vocabulary_progress,
     )
     await mini_app.start()
     if settings.webapp_url:
