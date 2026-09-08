@@ -1,7 +1,7 @@
 const tg = window.Telegram?.WebApp;
 tg?.ready();
 tg?.expand();
-try { tg?.requestFullscreen?.(); } catch (_) {}
+try { tg?.disableVerticalSwipes?.(); } catch (_) {}
 
 const state = { user: null, question: null, pending: null, score: 0 };
 const $ = (id) => document.getElementById(id);
@@ -164,13 +164,13 @@ async function submitAnswer(option) {
 function showFeedback(outcome) {
   const correct = outcome.is_correct;
   const streak = outcome.streak_after;
-  const catState = correct ? (streak >= 3 ? "streak" : "correct") : "support";
+  const catState = correct ? (streak >= 3 ? "streak" : "correct") : "wrong";
   const card = $("feedback-card");
   card.classList.remove("is-correct", "is-streak", "is-wrong");
   void card.offsetWidth;
   card.classList.add(correct ? (streak >= 3 ? "is-streak" : "is-correct") : "is-wrong");
   $("feedback-cat").src = `/static/assets/cat-${catState}.webp`;
-  $("feedback-title").textContent = correct ? (streak >= 3 ? `Серия ${streak}!` : "Верно!") : "Упс! Кот запомнил вместе с тобой";
+  $("feedback-title").textContent = correct ? (streak >= 3 ? `Серия ${streak}!` : "Верно!") : "Ой! Кот задумался";
   $("selected-answer").classList.toggle("hidden", correct);
   $("selected-answer").textContent = correct ? "" : `Было выбрано: ${outcome.selected_answer}`;
   $("correct-word").textContent = outcome.correct_answer;
