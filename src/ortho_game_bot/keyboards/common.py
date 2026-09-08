@@ -1,4 +1,4 @@
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
@@ -10,10 +10,18 @@ def grade_keyboard() -> InlineKeyboardMarkup:
     return builder.as_markup()
 
 
-def main_menu_keyboard() -> InlineKeyboardMarkup:
+def main_menu_keyboard(webapp_url: str | None = None) -> InlineKeyboardMarkup:
+    play_button = (
+        InlineKeyboardButton(
+            text="🐾 Открыть игру",
+            web_app=WebAppInfo(url=webapp_url),
+        )
+        if webapp_url
+        else InlineKeyboardButton(text="🎮 Играть", callback_data="game:menu")
+    )
     return InlineKeyboardMarkup(
         inline_keyboard=[
-            [InlineKeyboardButton(text="🎮 Играть", callback_data="game:menu")],
+            [play_button],
             [
                 InlineKeyboardButton(text="👤 Профиль", callback_data="profile"),
                 InlineKeyboardButton(text="🏆 Рейтинг", callback_data="leaderboard:global"),
@@ -30,11 +38,7 @@ def leaderboard_keyboard() -> InlineKeyboardMarkup:
                 InlineKeyboardButton(text="🌍 Общий", callback_data="leaderboard:global"),
                 InlineKeyboardButton(text="📚 Мой класс", callback_data="leaderboard:class"),
             ],
-            [
-                InlineKeyboardButton(
-                    text="📅 За месяц", callback_data="leaderboard:monthly"
-                )
-            ],
+            [InlineKeyboardButton(text="📅 За месяц", callback_data="leaderboard:monthly")],
             [InlineKeyboardButton(text="← Главное меню", callback_data="menu:main")],
         ]
     )

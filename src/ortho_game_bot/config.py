@@ -27,6 +27,9 @@ class Settings:
     log_level: str = "INFO"
     round_size: int = 10
     accept_e_for_yo: bool = False
+    webapp_url: str | None = None
+    port: int = 8080
+    webapp_demo: bool = False
 
     @classmethod
     def from_env(cls, *, require_token: bool = True) -> Settings:
@@ -46,4 +49,7 @@ class Settings:
             log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
             round_size=round_size,
             accept_e_for_yo=_parse_bool(os.getenv("ACCEPT_E_FOR_YO", "false")),
+            webapp_url=os.getenv("WEBAPP_URL", "").strip() or None,
+            port=int(os.getenv("PORT", "8080")),
+            webapp_demo=_parse_bool(os.getenv("WEBAPP_DEMO", "false")),
         )

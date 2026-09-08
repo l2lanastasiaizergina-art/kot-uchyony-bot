@@ -7,6 +7,7 @@ from aiogram.filters import Command, CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, Message
 
+from ortho_game_bot.config import Settings
 from ortho_game_bot.database import UserRepository
 from ortho_game_bot.game.retention import daily_multiplier_percent
 from ortho_game_bot.keyboards import (
@@ -40,7 +41,7 @@ async def _profile_text(telegram_id: int, users: UserRepository) -> str:
 
 
 @router.message(CommandStart())
-async def start(message: Message, users: UserRepository) -> None:
+async def start(message: Message, users: UserRepository, settings: Settings) -> None:
     tg_user = message.from_user
     if tg_user is None:
         return
@@ -57,7 +58,7 @@ async def start(message: Message, users: UserRepository) -> None:
         return
     await message.answer(
         f"С возвращением! Твой уровень — <b>{user.grade} класс</b>.",
-        reply_markup=main_menu_keyboard(),
+        reply_markup=main_menu_keyboard(settings.webapp_url),
     )
 
 
@@ -69,7 +70,7 @@ async def change_grade(callback: CallbackQuery) -> None:
 
 
 @router.callback_query(F.data.startswith("grade:"))
-async def set_grade(callback: CallbackQuery, users: UserRepository) -> None:
+async def set_grade(callback: CallbackQuery, users: UserRepository, settings: Settings) -> None:
     await callback.answer()
     if callback.data == "grade:change" or callback.from_user is None:
         return
@@ -82,26 +83,28 @@ async def set_grade(callback: CallbackQuery, users: UserRepository) -> None:
     if callback.message:
         await callback.message.edit_text(
             f"Отлично! Выбран <b>{grade} класс</b>. Можно начинать тренировку.",
-            reply_markup=main_menu_keyboard(),
+            reply_markup=main_menu_keyboard(settings.webapp_url),
         )
 
 
 @router.message(Command("profile"))
-async def profile_command(message: Message, users: UserRepository) -> None:
+async def profile_command(message: Message, users: UserRepository, settings: Settings) -> None:
     if message.from_user:
         await message.answer(
             await _profile_text(message.from_user.id, users),
-            reply_markup=main_menu_keyboard(),
+            reply_markup=main_menu_keyboard(settings.webapp_url),
         )
 
 
 @router.callback_query(F.data == "profile")
-async def profile_callback(callback: CallbackQuery, users: UserRepository) -> None:
+async def profile_callback(
+    callback: CallbackQuery, users: UserRepository, settings: Settings
+) -> None:
     await callback.answer()
     if callback.message:
         await callback.message.edit_text(
             await _profile_text(callback.from_user.id, users),
-            reply_markup=main_menu_keyboard(),
+            reply_markup=main_menu_keyboard(settings.webapp_url),
         )
 
 
@@ -144,11 +147,11 @@ async def leaderboard_callback(callback: CallbackQuery, users: UserRepository) -
 
 
 @router.callback_query(F.data == "menu:main")
-async def main_menu(callback: CallbackQuery, state: FSMContext) -> None:
+async def main_menu(callback: CallbackQuery, state: FSMContext, settings: Settings) -> None:
     await callback.answer()
     await state.clear()
     if callback.message:
         await callback.message.edit_text(
             "<b>🐈‍⬛ Кот Учёный</b>\n\nДокажи, что ты самый грамотный!",
-            reply_markup=main_menu_keyboard(),
+            reply_markup=main_menu_keyboard(settings.webapp_url),
         )

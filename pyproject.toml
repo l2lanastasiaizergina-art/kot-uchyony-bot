@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kot-uchyony-bot"
-version = "0.2.0"
+version = "0.3.0"
 description = "«Кот Учёный» — Telegram-бот для орфографической игры 1–11 классов"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -12,6 +12,7 @@ license = {text = "MIT"}
 authors = [{name = "Kot Uchyony contributors"}]
 dependencies = [
   "aiogram>=3.31,<4",
+  "aiohttp>=3.11,<4",
   "python-dotenv>=1.1,<2",
 ]
 
@@ -32,6 +33,7 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "ortho_game_bot.database.migrations" = ["*.sql"]
+"ortho_game_bot.webapp" = ["static/*", "static/assets/*", "static/assets/word_packs/*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]

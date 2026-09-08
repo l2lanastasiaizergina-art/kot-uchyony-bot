@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#0b2b4b">
+  <title>Кот Учёный</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="app-shell">
+    <section id="loading" class="center-screen">
+      <img class="loading-cat" src="/static/assets/cat-idle.webp" alt="Кот Учёный">
+      <p>Кот готовит задания…</p>
+    </section>
+
+    <section id="grade-screen" class="screen hidden">
+      <div class="compact-cat"><img src="/static/assets/cat-welcome.webp" alt="Кот приветствует"></div>
+      <h1>В каком ты классе?</h1>
+      <p class="muted">Кот подберёт задания специально для тебя</p>
+      <div id="grades" class="grade-grid" aria-label="Выбор класса"></div>
+    </section>
+
+    <section id="welcome-screen" class="screen hidden">
+      <div class="brand-row"><span>Кот Учёный</span><b id="welcome-score">0 ⭐</b></div>
+      <div class="cat-stage welcome">
+        <img src="/static/assets/cat-welcome.webp" alt="Кот Учёный машет лапой">
+      </div>
+      <div class="speech-card">
+        <h1>Готов к орфографическому челленджу?</h1>
+        <p id="welcome-copy">10 слов — и ты станешь ещё грамотнее!</p>
+      </div>
+      <button id="start-game" class="primary-button">Начать игру</button>
+    </section>
+
+    <section id="game-screen" class="screen hidden">
+      <header class="game-header">
+        <button id="close-game" class="icon-button" aria-label="Закрыть">×</button>
+        <div class="progress-wrap">
+          <div class="progress-label"><span id="progress-label">1 из 10</span><b id="score-label">0 ⭐</b></div>
+          <div class="progress-track"><div id="progress-fill"></div></div>
+        </div>
+      </header>
+
+      <div id="cat-stage" class="cat-stage">
+        <img id="cat-image" src="/static/assets/cat-idle.webp" alt="Кот Учёный">
+        <div id="cat-bubble" class="cat-bubble">Смотри внимательно!</div>
+      </div>
+
+      <section class="word-card" aria-label="Иллюстрация слова">
+        <div id="word-visual" class="word-visual" role="img" aria-label="Подсказка-картинка">🔎</div>
+        <div>
+          <span id="word-group" class="rule-chip"></span>
+          <h2>Как пишется правильно?</h2>
+        </div>
+      </section>
+
+      <div id="answers" class="answers" aria-label="Варианты ответа"></div>
+    </section>
+
+    <section id="feedback" class="feedback hidden" aria-live="assertive">
+      <div class="feedback-card">
+        <img id="feedback-cat" src="/static/assets/cat-correct.webp" alt="Реакция Кота Учёного">
+        <p id="feedback-title" class="feedback-title">Верно!</p>
+        <p id="selected-answer" class="selected-answer hidden"></p>
+        <div class="correct-label">Запомни правильное написание</div>
+        <div id="correct-word" class="correct-word">слово</div>
+        <p id="points-line" class="points-line">+10 очков</p>
+        <button id="next-question" class="primary-button">Дальше</button>
+      </div>
+    </section>
+
+    <section id="summary" class="screen hidden">
+      <div class="cat-stage winner"><img src="/static/assets/cat-winner.webp" alt="Кот с кубком"></div>
+      <h1>Раунд завершён!</h1>
+      <div class="summary-card">
+        <div><span>Правильно</span><b id="summary-correct">0/10</b></div>
+        <div><span>Лучшая серия</span><b id="summary-streak">0 🔥</b></div>
+        <div><span>Всего очков</span><b id="summary-score">0 ⭐</b></div>
+      </div>
+      <button id="play-again" class="primary-button">Ещё раунд</button>
+    </section>
+
+    <div id="error-toast" class="toast hidden" role="alert"></div>
+  </main>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

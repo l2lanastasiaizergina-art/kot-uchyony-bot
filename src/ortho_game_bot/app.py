@@ -6,7 +6,7 @@ import logging
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from aiogram.types import BotCommand
+from aiogram.types import BotCommand, MenuButtonWebApp, WebAppInfo
 from dotenv import load_dotenv
 
 from ortho_game_bot.config import Settings
@@ -20,6 +20,7 @@ from ortho_game_bot.game.service import GameService
 from ortho_game_bot.handlers import common_router, game_router
 from ortho_game_bot.logging_config import configure_logging
 from ortho_game_bot.middlewares import RateLimitMiddleware
+from ortho_game_bot.webapp import MiniAppServer
 
 logger = logging.getLogger(__name__)
 
@@ -59,15 +60,33 @@ async def main() -> None:
         round_size=settings.round_size,
     )
 
-    logger.info("Бот запущен в режиме long polling")
-    await dispatcher.start_polling(
-        bot,
+    mini_app = MiniAppServer(
+        settings=settings,
         users=users,
         content=content,
         game_service=game_service,
-        settings=settings,
-        allowed_updates=dispatcher.resolve_used_update_types(),
     )
+    await mini_app.start()
+    if settings.webapp_url:
+        await bot.set_chat_menu_button(
+            menu_button=MenuButtonWebApp(
+                text="Играть",
+                web_app=WebAppInfo(url=settings.webapp_url),
+            )
+        )
+
+    logger.info("Бот запущен в режиме long polling")
+    try:
+        await dispatcher.start_polling(
+            bot,
+            users=users,
+            content=content,
+            game_service=game_service,
+            settings=settings,
+            allowed_updates=dispatcher.resolve_used_update_types(),
+        )
+    finally:
+        await mini_app.stop()
 
 
 def run() -> None:

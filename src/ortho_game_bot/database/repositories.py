@@ -343,6 +343,12 @@ class ContentRepository:
         )
         return {row["grade"]: row["amount"] for row in rows}
 
+    async def answer_by_id(self, word_id: int) -> str | None:
+        row = await self.database.read_one(
+            "SELECT word FROM words WHERE id = ? AND is_active = 1", (word_id,)
+        )
+        return str(row["word"]) if row else None
+
     async def sample_words(self, *, grade: int, limit: int) -> list[GameWord]:
         if not 1 <= grade <= 11:
             raise ValueError("Класс должен быть от 1 до 11")
