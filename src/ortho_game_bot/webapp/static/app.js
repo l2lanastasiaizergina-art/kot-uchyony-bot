@@ -27,12 +27,18 @@ const state = {
     pending: null,
     diagnostic: null,
   },
+  ai: {
+    catalog: null,
+    mission: null,
+    progress: null,
+  },
 };
 const $ = (id) => document.getElementById(id);
 const screens = [
   "loading", "grade-screen", "welcome-screen", "library-screen",
   "library-mission-screen", "library-question-screen", "library-summary",
   "art-screen", "art-question-screen", "art-summary", "art-diagnostic",
+  "ai-home-screen", "ai-diagnostic-screen", "ai-mission-screen", "ai-summary-screen",
   "game-screen", "summary",
 ];
 const celebrationColors = ["#ffc83d", "#f7942d", "#26b96b", "#5aa9ff", "#e85d9b"];
@@ -119,6 +125,16 @@ async function chooseGrade(grade) {
     });
     state.user = data.user;
     openWelcome();
+  } catch (error) { toast(error.message); }
+}
+
+async function openAdultAICourse() {
+  try {
+    state.ai.catalog = await api("/api/ai-course/profile", {
+      method: "POST", body: JSON.stringify({ age_code: "A4" }),
+    });
+    renderAICourse();
+    showScreen("ai-home-screen");
   } catch (error) { toast(error.message); }
 }
 
@@ -769,6 +785,214 @@ function openArtImage() {
   $("art-image-dialog").showModal();
 }
 
+async function openAICourse() {
+  try {
+    state.ai.catalog = await api("/api/ai-course");
+    renderAICourse();
+    showScreen("ai-home-screen");
+  } catch (error) { toast(error.message); }
+}
+
+function renderAICourse() {
+  const catalog = state.ai.catalog;
+  const hasProfile = Boolean(catalog.profile);
+  $("ai-counter").textContent = `${catalog.completed_missions || 0}/${catalog.total_missions || 20}`;
+  $("ai-age-panel").classList.toggle("compact", hasProfile);
+  $("ai-age-panel").querySelector("h2").textContent = hasProfile ? "Возрастной режим" : "Выбери возраст";
+  $("ai-age-options").replaceChildren(...catalog.age_profiles.map((profile) => {
+    const button = document.createElement("button");
+    button.className = `age-chip ${catalog.profile?.age_code === profile.code ? "is-active" : ""}`;
+    button.textContent = profile.label;
+    button.addEventListener("click", () => selectAIAge(profile.code));
+    return button;
+  }));
+  $("ai-diagnostic-card").classList.toggle("hidden", !hasProfile);
+  $("ai-competencies").classList.toggle("hidden", !catalog.diagnostic?.completed);
+  if (!hasProfile) {
+    $("ai-worlds").replaceChildren();
+    return;
+  }
+  const diagnostic = catalog.diagnostic;
+  $("ai-diagnostic-title").textContent = diagnostic.completed ? "Карта навыков готова" : "Входная диагностика";
+  $("ai-diagnostic-copy").textContent = diagnostic.completed
+    ? `Общий индекс ${diagnostic.summary.overall_percent}% · посмотреть профиль`
+    : `${diagnostic.answered} из ${diagnostic.total} ситуаций`;
+  if (diagnostic.completed) renderAICompetencies(diagnostic.summary.competencies);
+  renderAIWorlds(catalog.worlds);
+}
+
+async function selectAIAge(ageCode) {
+  try {
+    state.ai.catalog = await api("/api/ai-course/profile", {
+      method: "POST", body: JSON.stringify({ age_code: ageCode }),
+    });
+    renderAICourse();
+    tg?.HapticFeedback?.selectionChanged?.();
+  } catch (error) { toast(error.message); }
+}
+
+function renderAICompetencies(competencies) {
+  $("ai-competency-list").replaceChildren(...competencies.map((item) => {
+    const row = document.createElement("div");
+    row.className = "competency-row";
+    row.innerHTML = `<span><b>${escapeHtml(item.title)}</b><small>${escapeHtml(item.status)}</small></span><i style="--value:${item.percent}%"><em></em></i><strong>${item.percent}%</strong>`;
+    return row;
+  }));
+}
+
+function renderAIWorlds(worlds) {
+  $("ai-worlds").replaceChildren(...worlds.map((world) => {
+    const section = document.createElement("section");
+    section.className = `ai-world world-${world.id.toLowerCase()}`;
+    const completed = world.missions.filter((mission) => mission.status === "completed").length;
+    section.innerHTML = `<header><span>Мир ${world.order}</span><b>${escapeHtml(world.title)}</b><small>${completed}/${world.missions.length}</small></header>`;
+    const list = document.createElement("div");
+    list.className = "ai-mission-list";
+    list.replaceChildren(...world.missions.map((mission) => {
+      const button = document.createElement("button");
+      const recommended = state.ai.catalog.recommended_mission_id === mission.id;
+      button.className = `ai-mission-card ${mission.status === "completed" ? "is-complete" : ""} ${!mission.unlocked ? "is-locked" : ""} ${recommended ? "is-recommended" : ""}`;
+      button.disabled = !mission.unlocked || mission.status === "completed";
+      const status = mission.status === "completed" ? "Готово ✓" : mission.unlocked ? (recommended ? "Совет Кота" : "Открыть") : "🔒";
+      button.innerHTML = `<span>${mission.order}</span><div><b>${escapeHtml(mission.title)}</b><small>${mission.minutes} мин · ${mission.xp} XP</small></div><em>${status}</em>`;
+      if (!button.disabled) button.addEventListener("click", () => startAIMission(mission.id));
+      return button;
+    }));
+    section.append(list);
+    return section;
+  }));
+}
+
+function openAIDiagnostic() {
+  const diagnostic = state.ai.catalog?.diagnostic;
+  if (!diagnostic) return;
+  if (diagnostic.completed) {
+    $("ai-competencies").scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+  renderAIDiagnostic(diagnostic.next_task);
+}
+
+function renderAIDiagnostic(task) {
+  $("ai-diagnostic-progress").textContent = `Вопрос ${task.position} из ${task.total}`;
+  $("ai-diagnostic-fill").style.width = `${((task.position - 1) / task.total) * 100}%`;
+  $("ai-diagnostic-facet").textContent = task.facet;
+  $("ai-diagnostic-question").textContent = task.question;
+  $("ai-diagnostic-answers").replaceChildren(...task.options.map((option, index) => {
+    const button = document.createElement("button");
+    button.className = "library-answer-button";
+    button.innerHTML = `<span>${String.fromCharCode(65 + index)}</span><b>${escapeHtml(option)}</b>`;
+    button.addEventListener("click", () => submitAIDiagnostic(task.task_id, index));
+    return button;
+  }));
+  showScreen("ai-diagnostic-screen");
+}
+
+async function submitAIDiagnostic(taskId, option) {
+  document.querySelectorAll("#ai-diagnostic-answers button").forEach((button) => { button.disabled = true; });
+  try {
+    state.ai.catalog = await api("/api/ai-course/diagnostic/answer", {
+      method: "POST", body: JSON.stringify({ task_id: taskId, option }),
+    });
+    tg?.HapticFeedback?.impactOccurred("light");
+    if (state.ai.catalog.diagnostic.completed) {
+      renderAICourse();
+      showScreen("ai-home-screen");
+      toast("Диагностика завершена — Кот построил карту навыков");
+    } else {
+      renderAIDiagnostic(state.ai.catalog.diagnostic.next_task);
+    }
+  } catch (error) {
+    toast(error.message);
+    document.querySelectorAll("#ai-diagnostic-answers button").forEach((button) => { button.disabled = false; });
+  }
+}
+
+async function startAIMission(missionId) {
+  try {
+    const data = await api(`/api/ai-course/missions/${missionId}/start`, { method: "POST", body: "{}" });
+    state.ai.mission = data.mission;
+    state.ai.progress = data.progress;
+    renderAIMission();
+    showScreen("ai-mission-screen");
+  } catch (error) { toast(error.message); }
+}
+
+function renderAIMission() {
+  const mission = state.ai.mission;
+  $("ai-mission-code").textContent = `Миссия ${mission.id}`;
+  $("ai-mission-title").textContent = mission.title;
+  $("ai-mission-xp").textContent = `${mission.xp} XP`;
+  $("ai-mission-hook").textContent = mission.story_hook;
+  $("ai-mission-theory").textContent = mission.theory;
+  $("ai-mission-rule").textContent = mission.rule;
+  $("ai-check-question").textContent = mission.check.prompt;
+  $("ai-check-feedback").classList.add("hidden");
+  $("ai-practice-panel").classList.toggle("hidden", !state.ai.progress.check_completed);
+  $("ai-practical-task").textContent = mission.practical_task;
+  $("ai-evidence-prompt").textContent = mission.evidence_prompt;
+  $("ai-evidence").value = state.ai.progress.evidence_text || "";
+  renderAICheckAnswers();
+}
+
+function renderAICheckAnswers() {
+  const mission = state.ai.mission;
+  $("ai-check-answers").replaceChildren(...mission.check.options.map((option, index) => {
+    const button = document.createElement("button");
+    button.className = "ai-check-button";
+    button.disabled = Boolean(state.ai.progress.check_completed);
+    button.innerHTML = `<span>${String.fromCharCode(65 + index)}</span><b>${escapeHtml(option)}</b>`;
+    button.addEventListener("click", () => submitAIMissionCheck(index));
+    return button;
+  }));
+}
+
+async function submitAIMissionCheck(option) {
+  document.querySelectorAll(".ai-check-button").forEach((button) => { button.disabled = true; });
+  try {
+    const result = await api("/api/ai-course/missions/answer", {
+      method: "POST", body: JSON.stringify({ mission_id: state.ai.mission.id, option }),
+    });
+    const feedback = $("ai-check-feedback");
+    feedback.className = `ai-inline-feedback ${result.is_correct ? "is-correct" : "is-wrong"}`;
+    feedback.textContent = result.allow_retry
+      ? `${result.cat_message} Есть ещё одна попытка.`
+      : `${result.cat_message} ${result.explanation}`;
+    if (result.allow_retry) {
+      document.querySelectorAll(".ai-check-button").forEach((button) => { button.disabled = false; });
+      return;
+    }
+    state.ai.progress.check_completed = 1;
+    $("ai-practical-task").textContent = result.practical_task;
+    $("ai-evidence-prompt").textContent = result.evidence_prompt;
+    $("ai-practice-panel").classList.remove("hidden");
+    $("ai-practice-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+    tg?.HapticFeedback?.notificationOccurred(result.is_correct ? "success" : "warning");
+  } catch (error) {
+    toast(error.message);
+    document.querySelectorAll(".ai-check-button").forEach((button) => { button.disabled = false; });
+  }
+}
+
+async function completeAIMission() {
+  const button = $("ai-complete-mission");
+  button.disabled = true;
+  try {
+    const result = await api("/api/ai-course/missions/evidence", {
+      method: "POST",
+      body: JSON.stringify({ mission_id: state.ai.mission.id, evidence_text: $("ai-evidence").value }),
+    });
+    state.ai.catalog = result.catalog;
+    state.user.total_score = result.total_score;
+    $("ai-summary-title").textContent = `${state.ai.mission.title} — пройдено!`;
+    $("ai-summary-xp").textContent = `+${result.xp} XP`;
+    $("ai-summary-progress").textContent = `${result.catalog.completed_missions}/${result.catalog.total_missions}`;
+    $("ai-summary-score").textContent = `${result.total_score} ⭐`;
+    showScreen("ai-summary-screen");
+  } catch (error) { toast(error.message); }
+  finally { button.disabled = false; }
+}
+
 async function bootstrap() {
   renderGrades();
   try {
@@ -782,6 +1006,7 @@ async function bootstrap() {
 }
 
 $("start-game").addEventListener("click", startGame);
+$("adult-ai-entry").addEventListener("click", openAdultAICourse);
 $("open-library").addEventListener("click", openLibrary);
 $("open-art").addEventListener("click", openArt);
 $("art-home").addEventListener("click", openWelcome);
@@ -793,6 +1018,16 @@ $("art-summary-back").addEventListener("click", loadArtCatalog);
 $("art-diagnostic-back").addEventListener("click", loadArtCatalog);
 $("art-visual-button").addEventListener("click", openArtImage);
 $("art-image-close").addEventListener("click", () => $("art-image-dialog").close());
+$("open-ai-course").addEventListener("click", openAICourse);
+$("ai-home").addEventListener("click", openWelcome);
+$("ai-diagnostic-card").addEventListener("click", openAIDiagnostic);
+$("ai-diagnostic-back").addEventListener("click", openAICourse);
+$("ai-mission-back").addEventListener("click", openAICourse);
+$("ai-complete-mission").addEventListener("click", completeAIMission);
+$("ai-summary-back").addEventListener("click", () => {
+  renderAICourse();
+  showScreen("ai-home-screen");
+});
 $("library-home").addEventListener("click", openWelcome);
 $("mission-back").addEventListener("click", openLibrary);
 $("question-back").addEventListener("click", () => state.library.phase === "review" ? openLibrary() : showLibraryStory());

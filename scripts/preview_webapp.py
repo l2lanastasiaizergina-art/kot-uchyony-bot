@@ -5,6 +5,7 @@ from __future__ import annotations
 import asyncio
 from pathlib import Path
 
+from ortho_game_bot.ai_course import AICourseContent, AICourseRepository
 from ortho_game_bot.art_culture import ArtCultureContent, ArtCultureRepository
 from ortho_game_bot.config import Settings
 from ortho_game_bot.database import ContentRepository, Database, GameRepository, UserRepository
@@ -27,6 +28,7 @@ async def main() -> None:
         content_path=Path("data/words"),
         leader_library_path=Path("data/leader_library/content.ru.json"),
         art_culture_path=Path("data/art_culture/content.ru-en-kz.json.gz"),
+        ai_course_path=Path("data/ai_course/content.ru.json.gz"),
         webapp_demo=True,
         port=8080,
     )
@@ -39,6 +41,8 @@ async def main() -> None:
         leader_library_progress=LeaderLibraryRepository(database),
         art_culture=ArtCultureContent(settings.art_culture_path),
         art_culture_progress=ArtCultureRepository(database),
+        ai_course=AICourseContent(settings.ai_course_path),
+        ai_course_progress=AICourseRepository(database),
     )
     await server.start()
     print("Mini App preview: http://127.0.0.1:8080")

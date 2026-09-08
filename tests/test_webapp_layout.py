@@ -23,3 +23,18 @@ def test_telegram_overlay_and_wrong_answer_reaction() -> None:
     assert "disableVerticalSwipes" in script
     assert ': "wrong"' in script
     assert (STATIC_DIR / "assets" / "cat-wrong.webp").is_file()
+
+
+def test_ai_course_has_catalog_diagnostic_and_practice_screens() -> None:
+    markup = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    script = (STATIC_DIR / "app.js").read_text(encoding="utf-8")
+    for element_id in (
+        "open-ai-course",
+        "ai-home-screen",
+        "ai-diagnostic-screen",
+        "ai-mission-screen",
+        "ai-evidence",
+    ):
+        assert f'id="{element_id}"' in markup
+    assert 'api("/api/ai-course")' in script
+    assert 'api("/api/ai-course/missions/evidence"' in script

@@ -56,6 +56,10 @@ erDiagram
     WORDS ||--o{ GAME_ANSWERS : asks
     USERS ||--o{ MONTHLY_SCORES : has
     USERS ||--o{ SCORE_EVENTS : earns
+    USERS ||--o| AI_COURSE_PROFILES : selects
+    USERS ||--o{ AI_DIAGNOSTIC_ANSWERS : answers
+    USERS ||--o{ AI_MISSION_PROGRESS : completes
+    AI_MISSION_PROGRESS ||--o{ AI_MISSION_ANSWERS : checks
     QUIZ_EVENTS ||--o{ QUIZ_QUESTIONS : contains
     QUIZ_EVENTS ||--o{ QUIZ_ATTEMPTS : receives
     USERS ||--o{ QUIZ_ATTEMPTS : makes
@@ -64,6 +68,17 @@ erDiagram
 `score_events.idempotency_key` не позволяет одному callback-запросу дважды
 начислить очки. `game_answers` хранит снимок правильного ответа: история
 останется воспроизводимой даже после выпуска новой версии словаря.
+
+## Контур «Код ИИ»
+
+Контент курса хранится как версионируемый JSON: 64 диагностические формулировки
+(16 × 4 возраста) и 80 версий миссий (20 × 4 возраста). Возраст курса не зависит
+от школьного класса, поэтому режим `18+` доступен в том же приложении.
+
+После диагностики сервер строит профиль восьми компетенций и открывает первую
+миссию каждого мира. Внутри мира миссии идут последовательно. Проверочный ответ
+имеет две попытки, а завершение фиксируется только после практического
+доказательства. Вес ответа, правильный вариант и оценка остаются на сервере.
 
 ## Ежемесячные рейтинги без удаления истории
 

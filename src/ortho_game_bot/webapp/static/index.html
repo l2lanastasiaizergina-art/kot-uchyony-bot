@@ -20,6 +20,7 @@
       <h1>В каком ты классе?</h1>
       <p class="muted">Кот подберёт задания специально для тебя</p>
       <div id="grades" class="grade-grid" aria-label="Выбор класса"></div>
+      <button id="adult-ai-entry" class="adult-ai-entry">Мне 18+ — перейти сразу в «Код ИИ»</button>
     </section>
 
     <section id="welcome-screen" class="screen hidden">
@@ -47,7 +48,109 @@
           <span><b>Мировое искусство</b><small>27 разделов · 405 вопросов · RU/EN/KZ</small></span>
           <i>›</i>
         </button>
+        <button id="open-ai-course" class="module-card ai-module">
+          <span class="module-icon">🧠</span>
+          <span><b>Код ИИ</b><small>Диагностика и 20 практических миссий</small></span>
+          <i>›</i>
+        </button>
       </div>
+    </section>
+
+    <section id="ai-home-screen" class="screen ai-shell hidden">
+      <header class="library-header">
+        <button id="ai-home" class="icon-button" aria-label="На главную">‹</button>
+        <div>
+          <span class="section-kicker">Академия Кота</span>
+          <h1>Код ИИ</h1>
+        </div>
+        <b id="ai-counter" class="library-counter">0/20</b>
+      </header>
+      <div class="ai-hero">
+        <img src="/static/assets/cat-hint.webp" alt="Кот исследует искусственный интеллект">
+        <div><b>Научись управлять ИИ</b><span>Ставь задачи, проверяй ответы и сохраняй авторство</span></div>
+      </div>
+      <section id="ai-age-panel" class="ai-panel">
+        <span class="story-eyebrow">Мой режим</span>
+        <h2>Выбери возраст</h2>
+        <p>Сюжеты и примеры адаптируются, а карта навыков остаётся общей.</p>
+        <div id="ai-age-options" class="age-options"></div>
+      </section>
+      <button id="ai-diagnostic-card" class="diagnostic-card hidden">
+        <span class="diagnostic-icon">🧭</span>
+        <span><b id="ai-diagnostic-title">Входная диагностика</b><small id="ai-diagnostic-copy">16 коротких ситуаций</small></span>
+        <i>›</i>
+      </button>
+      <section id="ai-competencies" class="ai-panel hidden">
+        <span class="story-eyebrow">Карта компетенций</span>
+        <div id="ai-competency-list" class="competency-list"></div>
+      </section>
+      <div id="ai-worlds" class="ai-worlds"></div>
+    </section>
+
+    <section id="ai-diagnostic-screen" class="screen ai-question-layout hidden">
+      <header class="mission-header">
+        <button id="ai-diagnostic-back" class="icon-button" aria-label="Назад к курсу">‹</button>
+        <div class="progress-wrap">
+          <div class="progress-label"><span id="ai-diagnostic-progress">Вопрос 1 из 16</span><b>🧭</b></div>
+          <div class="progress-track"><div id="ai-diagnostic-fill" class="ai-progress-fill"></div></div>
+        </div>
+      </header>
+      <div class="question-cat-row">
+        <img src="/static/assets/cat-hint.webp" alt="Кот задаёт вопрос">
+        <span id="ai-diagnostic-facet">Выбери самый близкий вариант</span>
+      </div>
+      <section class="question-card ai-question-card">
+        <span class="story-eyebrow">Диагностика</span>
+        <h2 id="ai-diagnostic-question"></h2>
+      </section>
+      <div id="ai-diagnostic-answers" class="library-answers ai-answer-grid"></div>
+    </section>
+
+    <section id="ai-mission-screen" class="screen ai-mission-layout hidden">
+      <header class="library-header">
+        <button id="ai-mission-back" class="icon-button" aria-label="Назад к карте">‹</button>
+        <div>
+          <span id="ai-mission-code" class="section-kicker">Миссия AI-M01</span>
+          <h1 id="ai-mission-title">Название миссии</h1>
+        </div>
+        <b id="ai-mission-xp" class="library-counter">60 XP</b>
+      </header>
+      <div class="ai-mission-scroll">
+        <section class="ai-story-block">
+          <span class="story-eyebrow">Ситуация</span>
+          <p id="ai-mission-hook"></p>
+        </section>
+        <section class="ai-theory-grid">
+          <article><b>Разбираемся</b><p id="ai-mission-theory"></p></article>
+          <article><b>Правило Кота</b><p id="ai-mission-rule"></p></article>
+        </section>
+        <section id="ai-check-panel" class="ai-check-panel">
+          <span class="story-eyebrow">Проверка</span>
+          <h2 id="ai-check-question"></h2>
+          <div id="ai-check-answers" class="ai-check-answers"></div>
+          <div id="ai-check-feedback" class="ai-inline-feedback hidden"></div>
+        </section>
+        <section id="ai-practice-panel" class="ai-practice-panel hidden">
+          <span class="story-eyebrow">Практика</span>
+          <h2>Примени навык</h2>
+          <p id="ai-practical-task"></p>
+          <label for="ai-evidence"><b>Доказательство результата</b><small id="ai-evidence-prompt"></small></label>
+          <textarea id="ai-evidence" maxlength="1200" rows="5" placeholder="Коротко опиши, что сделал(а) и какой вывод получил(а)"></textarea>
+          <button id="ai-complete-mission" class="primary-button">Завершить миссию</button>
+        </section>
+      </div>
+    </section>
+
+    <section id="ai-summary-screen" class="screen hidden">
+      <div class="cat-stage winner"><img src="/static/assets/cat-winner.webp" alt="Кот празднует новый навык"></div>
+      <span class="section-kicker">Миссия завершена</span>
+      <h1 id="ai-summary-title">Навык открыт!</h1>
+      <div class="summary-card">
+        <div><span>Награда</span><b id="ai-summary-xp">+60 XP</b></div>
+        <div><span>Пройдено</span><b id="ai-summary-progress">1/20</b></div>
+        <div><span>Всего очков</span><b id="ai-summary-score">0 ⭐</b></div>
+      </div>
+      <button id="ai-summary-back" class="primary-button">К карте курса</button>
     </section>
 
     <section id="library-screen" class="screen library-shell hidden">

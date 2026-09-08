@@ -9,6 +9,14 @@ from zipfile import ZipFile
 
 from aiohttp import web
 
+from ortho_game_bot.ai_course import (
+    AICourseContent,
+    AICourseError,
+    AICourseInvalidOptionError,
+    AICourseNotFoundError,
+    AICourseRepository,
+    AICourseStaleAnswerError,
+)
 from ortho_game_bot.art_culture import (
     AGE_MODES,
     LANGUAGES,
@@ -177,6 +185,8 @@ class MiniAppServer:
         leader_library_progress: LeaderLibraryRepository,
         art_culture: ArtCultureContent,
         art_culture_progress: ArtCultureRepository,
+        ai_course: AICourseContent,
+        ai_course_progress: AICourseRepository,
     ) -> None:
         self.settings = settings
         self.users = users
@@ -186,6 +196,8 @@ class MiniAppServer:
         self.leader_library_progress = leader_library_progress
         self.art_culture = art_culture
         self.art_culture_progress = art_culture_progress
+        self.ai_course = ai_course
+        self.ai_course_progress = ai_course_progress
         self.runner: web.AppRunner | None = None
         self.word_archives: dict[str, Path] = {}
         self.art_culture_archives: dict[str, Path] = {}
@@ -222,6 +234,14 @@ class MiniAppServer:
         app.router.add_post("/api/art/answer", self.art_answer)
         app.router.add_get("/api/art/diagnostic", self.art_diagnostic)
         app.router.add_get("/static/assets/art_culture/{filename}", self.art_culture_image)
+        app.router.add_get("/api/ai-course", self.ai_course_catalog)
+        app.router.add_post("/api/ai-course/profile", self.ai_course_set_profile)
+        app.router.add_post("/api/ai-course/diagnostic/answer", self.ai_diagnostic_answer)
+        app.router.add_post(
+            "/api/ai-course/missions/{mission_id}/start", self.ai_mission_start
+        )
+        app.router.add_post("/api/ai-course/missions/answer", self.ai_mission_answer)
+        app.router.add_post("/api/ai-course/missions/evidence", self.ai_mission_evidence)
         app.router.add_get("/static/assets/words/{filename}", self.word_image)
         app.router.add_static("/static/", static_dir, show_index=False)
         self.runner = web.AppRunner(app)
@@ -841,6 +861,267 @@ class MiniAppServer:
         else:
             payload["question"] = self._art_question(session)
         return payload
+    async def ai_course_catalog(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        return web.json_response(await self._ai_course_catalog_payload(tg_user.id))
+
+    async def ai_course_set_profile(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        payload = await request.json()
+        try:
+            age_code = self.ai_course.validate_age_code(str(payload["age_code"]))
+            track_raw = payload.get("track_code")
+            track_code = self.ai_course.validate_track_code(
+                age_code, str(track_raw) if track_raw else None
+            )
+            await self.ai_course_progress.set_profile(
+                user_id=tg_user.id, age_code=age_code, track_code=track_code
+            )
+        except (KeyError, TypeError, ValueError, AICourseError) as exc:
+            raise web.HTTPBadRequest(text=str(exc) or "Некорректный профиль курса") from exc
+        return web.json_response(await self._ai_course_catalog_payload(tg_user.id))
+
+    async def ai_diagnostic_answer(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        payload = await request.json()
+        profile = await self.ai_course_progress.profile(user_id=tg_user.id)
+        if profile is None:
+            raise web.HTTPConflict(text="Сначала выберите возрастной режим")
+        age_code = str(profile["age_code"])
+        answers = await self.ai_course_progress.diagnostic_answers(
+            user_id=tg_user.id, age_code=age_code
+        )
+        tasks = self.ai_course.diagnostic_tasks(age_code)
+        if len(answers) >= len(tasks):
+            raise web.HTTPConflict(text="Диагностика уже завершена")
+        expected = tasks[len(answers)]
+        try:
+            task_id = str(payload["task_id"])
+            option = int(payload["option"])
+            if task_id != expected["task_id"]:
+                raise AICourseStaleAnswerError("Откройте актуальное задание диагностики")
+            score = self.ai_course.diagnostic_score(age_code, task_id, option)
+            await self.ai_course_progress.answer_diagnostic(
+                user_id=tg_user.id,
+                age_code=age_code,
+                task_id=task_id,
+                competency_id=str(expected["competency_id"]),
+                selected_option=option,
+                score=score,
+            )
+        except (KeyError, TypeError, ValueError, AICourseInvalidOptionError) as exc:
+            raise web.HTTPBadRequest(text="Некорректный ответ") from exc
+        except (AICourseNotFoundError, AICourseStaleAnswerError) as exc:
+            raise web.HTTPConflict(text=str(exc)) from exc
+        return web.json_response(await self._ai_course_catalog_payload(tg_user.id))
+
+    async def ai_mission_start(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        mission_id = request.match_info["mission_id"]
+        profile = await self.ai_course_progress.profile(user_id=tg_user.id)
+        if profile is None:
+            raise web.HTTPConflict(text="Сначала выберите возрастной режим")
+        try:
+            self.ai_course.mission(mission_id)
+            await self._ensure_ai_mission_unlocked(user_id=tg_user.id, mission_id=mission_id)
+            progress = await self.ai_course_progress.start_mission(
+                user_id=tg_user.id, mission_id=mission_id
+            )
+        except AICourseNotFoundError as exc:
+            raise web.HTTPNotFound(text=str(exc)) from exc
+        except AICourseError as exc:
+            raise web.HTTPConflict(text=str(exc)) from exc
+        return web.json_response(
+            {
+                "mission": self.ai_course.public_mission(
+                    self.ai_course.mission(mission_id), str(profile["age_code"])
+                ),
+                "progress": progress,
+            }
+        )
+
+    async def ai_mission_answer(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        payload = await request.json()
+        profile = await self.ai_course_progress.profile(user_id=tg_user.id)
+        if profile is None:
+            raise web.HTTPConflict(text="Сначала выберите возрастной режим")
+        try:
+            mission_id = str(payload["mission_id"])
+            option = int(payload["option"])
+            variant = self.ai_course.mission_variant(mission_id, str(profile["age_code"]))
+            check, _ = self.ai_course.mission_check(
+                mission_id, str(profile["age_code"]), option
+            )
+            result = await self.ai_course_progress.answer_mission_check(
+                user_id=tg_user.id,
+                mission_id=mission_id,
+                selected_option=option,
+                correct_option=int(check["correct_option"]),
+            )
+        except (KeyError, TypeError, ValueError, AICourseInvalidOptionError) as exc:
+            raise web.HTTPBadRequest(text="Некорректный ответ") from exc
+        except AICourseNotFoundError as exc:
+            raise web.HTTPNotFound(text=str(exc)) from exc
+        except AICourseStaleAnswerError as exc:
+            raise web.HTTPConflict(text=str(exc)) from exc
+        response: dict[str, Any] = {
+            **asdict(result),
+            "cat_message": variant["cat_success"] if result.is_correct else variant["cat_retry"],
+        }
+        if result.allow_retry:
+            return web.json_response(response)
+        response.update(
+            {
+                "correct_option": check["correct_option"],
+                "correct_answer": check["options"][check["correct_option"]],
+                "explanation": check["explanation"],
+                "practical_task": variant["practical_task"],
+                "evidence_prompt": variant["evidence_prompt"],
+            }
+        )
+        return web.json_response(response)
+
+    async def ai_mission_evidence(self, request: web.Request) -> web.Response:
+        tg_user = await self._auth(request)
+        payload = await request.json()
+        try:
+            mission_id = str(payload["mission_id"])
+            mission = self.ai_course.mission(mission_id)
+            progress = await self.ai_course_progress.save_evidence(
+                user_id=tg_user.id,
+                mission_id=mission_id,
+                evidence_text=str(payload["evidence_text"]),
+            )
+        except (KeyError, TypeError, ValueError, AICourseError) as exc:
+            raise web.HTTPConflict(text=str(exc) or "Не удалось сохранить практику") from exc
+        score = await self.users.apply_score(
+            telegram_id=tg_user.id,
+            source_type="ai_course",
+            source_id=mission_id,
+            delta=int(mission["xp"]),
+            idempotency_key=f"ai-course:{mission_id}:complete",
+            correct_delta=int(bool(progress["first_attempt_correct"])),
+        )
+        return web.json_response(
+            {
+                "mission_id": mission_id,
+                "completed": True,
+                "xp": int(mission["xp"]),
+                "total_score": score.total_score,
+                "catalog": await self._ai_course_catalog_payload(tg_user.id),
+            }
+        )
+
+    async def _ai_course_catalog_payload(self, user_id: int) -> dict[str, Any]:
+        profile = await self.ai_course_progress.profile(user_id=user_id)
+        base: dict[str, Any] = {
+            "product": self.ai_course.product,
+            "subtitle": self.ai_course.subtitle,
+            "age_profiles": self.ai_course.age_profiles,
+            "profile": profile,
+        }
+        if profile is None:
+            return {**base, "diagnostic": None, "worlds": [], "tracks": []}
+
+        age_code = str(profile["age_code"])
+        answers = await self.ai_course_progress.diagnostic_answers(
+            user_id=user_id, age_code=age_code
+        )
+        diagnostic_complete = len(answers) == self.ai_course.DIAGNOSTIC_COUNT
+        diagnostic: dict[str, Any] = {
+            "answered": len(answers),
+            "total": self.ai_course.DIAGNOSTIC_COUNT,
+            "completed": diagnostic_complete,
+        }
+        summary: dict[str, Any] | None = None
+        if diagnostic_complete:
+            summary = self.ai_course.diagnostic_summary(answers)
+            diagnostic["summary"] = summary
+        else:
+            task = self.ai_course.diagnostic_tasks(age_code)[len(answers)]
+            diagnostic["next_task"] = self.ai_course.public_diagnostic_task(
+                task, len(answers) + 1
+            )
+
+        progress_by_mission = await self.ai_course_progress.all_mission_progress(
+            user_id=user_id
+        )
+        mission_ids = self.ai_course.mission_ids()
+        completed_count = sum(
+            item["status"] == "completed" for item in progress_by_mission.values()
+        )
+        world_payloads = []
+        for world in self.ai_course.worlds:
+            world_missions = [
+                self.ai_course.mission(item_id)
+                for item_id in mission_ids
+                if self.ai_course.mission(item_id)["world_id"] == world["id"]
+            ]
+            previous_completed = diagnostic_complete
+            mission_payloads = []
+            for mission in world_missions:
+                progress = progress_by_mission.get(mission["id"])
+                completed = bool(progress and progress["status"] == "completed")
+                variant = self.ai_course.mission_variant(mission["id"], age_code)
+                mission_payloads.append(
+                    {
+                        "id": mission["id"],
+                        "order": mission["order"],
+                        "title": variant["title"],
+                        "primary_competency": mission["primary_competency"],
+                        "minutes": mission["minutes"],
+                        "xp": mission["xp"],
+                        "unlocked": bool(progress) or previous_completed,
+                        "status": progress["status"] if progress else "not_started",
+                        "check_completed": bool(progress and progress["check_completed"]),
+                    }
+                )
+                previous_completed = completed
+            world_payloads.append({**world, "missions": mission_payloads})
+        tracks = [
+            {"code": code, **track}
+            for code, track in self.ai_course.track_variants[age_code].items()
+        ]
+        return {
+            **base,
+            "diagnostic": diagnostic,
+            "worlds": world_payloads,
+            "tracks": tracks,
+            "completed_missions": completed_count,
+            "total_missions": self.ai_course.MISSION_COUNT,
+            "recommended_mission_id": summary["recommended_mission_id"] if summary else None,
+        }
+
+    async def _ensure_ai_mission_unlocked(self, *, user_id: int, mission_id: str) -> None:
+        profile = await self.ai_course_progress.profile(user_id=user_id)
+        if profile is None:
+            raise AICourseError("Сначала выберите возрастной режим")
+        answers = await self.ai_course_progress.diagnostic_answers(
+            user_id=user_id, age_code=str(profile["age_code"])
+        )
+        if len(answers) != self.ai_course.DIAGNOSTIC_COUNT:
+            raise AICourseError("Сначала завершите входную диагностику")
+        existing = await self.ai_course_progress.mission_progress(
+            user_id=user_id, mission_id=mission_id
+        )
+        if existing is not None:
+            return
+        mission = self.ai_course.mission(mission_id)
+        mission_ids = self.ai_course.mission_ids()
+        world_ids = [
+            item_id
+            for item_id in mission_ids
+            if self.ai_course.mission(item_id)["world_id"] == mission["world_id"]
+        ]
+        world_index = world_ids.index(mission_id)
+        if world_index == 0:
+            return
+        previous = await self.ai_course_progress.mission_progress(
+            user_id=user_id, mission_id=world_ids[world_index - 1]
+        )
+        if previous is None or previous["status"] != "completed":
+            raise AICourseError("Сначала завершите предыдущую миссию этого мира")
 
     async def _ensure_library_book_unlocked(self, *, user_id: int, book_id: str) -> None:
         book_ids = self.leader_library.book_ids()
