@@ -34,7 +34,7 @@
       <button id="start-game" class="primary-button">Начать игру</button>
     </section>
 
-    <section id="game-screen" class="screen hidden">
+    <section id="game-screen" class="screen game-layout hidden">
       <header class="game-header">
         <button id="close-game" class="icon-button" aria-label="Закрыть">×</button>
         <div class="progress-wrap">
@@ -43,14 +43,15 @@
         </div>
       </header>
 
-      <div id="cat-stage" class="cat-stage">
+      <div id="cat-stage" class="cat-stage game-cat-stage">
+        <div id="game-celebration" class="celebration" aria-hidden="true"></div>
         <img id="cat-image" src="/static/assets/cat-idle.webp" alt="Кот Учёный">
-        <div id="cat-bubble" class="cat-bubble">Смотри внимательно!</div>
       </div>
+      <p id="cat-message" class="cat-message">Смотри внимательно!</p>
 
       <section class="word-card" aria-label="Иллюстрация слова">
         <div id="word-visual" class="word-visual" role="img" aria-label="Подсказка-картинка">🔎</div>
-        <div>
+        <div class="word-copy">
           <span id="word-group" class="rule-chip"></span>
           <h2>Как пишется правильно?</h2>
         </div>
@@ -60,7 +61,8 @@
     </section>
 
     <section id="feedback" class="feedback hidden" aria-live="assertive">
-      <div class="feedback-card">
+      <div id="feedback-card" class="feedback-card">
+        <div id="feedback-celebration" class="celebration feedback-celebration" aria-hidden="true"></div>
         <img id="feedback-cat" src="/static/assets/cat-correct.webp" alt="Реакция Кота Учёного">
         <p id="feedback-title" class="feedback-title">Верно!</p>
         <p id="selected-answer" class="selected-answer hidden"></p>
