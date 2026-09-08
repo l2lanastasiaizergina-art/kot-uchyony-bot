@@ -18,6 +18,7 @@ from ortho_game_bot.database import (
 )
 from ortho_game_bot.game.service import GameService
 from ortho_game_bot.handlers import common_router, game_router
+from ortho_game_bot.leader_library import LeaderLibraryContent, LeaderLibraryRepository
 from ortho_game_bot.logging_config import configure_logging
 from ortho_game_bot.middlewares import RateLimitMiddleware
 from ortho_game_bot.webapp import MiniAppServer
@@ -59,12 +60,16 @@ async def main() -> None:
         GameRepository(database),
         round_size=settings.round_size,
     )
+    leader_library = LeaderLibraryContent(settings.leader_library_path)
+    leader_library_progress = LeaderLibraryRepository(database)
 
     mini_app = MiniAppServer(
         settings=settings,
         users=users,
         content=content,
         game_service=game_service,
+        leader_library=leader_library,
+        leader_library_progress=leader_library_progress,
     )
     await mini_app.start()
     if settings.webapp_url:

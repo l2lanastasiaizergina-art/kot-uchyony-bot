@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kot-uchyony-bot"
-version = "0.3.0"
-description = "«Кот Учёный» — Telegram-бот для орфографической игры 1–11 классов"
+version = "0.4.0"
+description = "«Кот Учёный» — Telegram Mini App с орфографией и Библиотекой лидера"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
