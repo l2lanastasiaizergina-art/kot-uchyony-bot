@@ -42,6 +42,11 @@
           <span><b>Библиотека лидера</b><small>100 книг — 600 решений</small></span>
           <i>›</i>
         </button>
+        <button id="open-art" class="module-card art-module">
+          <span class="module-icon">🏛️</span>
+          <span><b>Мировое искусство</b><small>27 разделов · 405 вопросов · RU/EN/KZ</small></span>
+          <i>›</i>
+        </button>
       </div>
     </section>
 
@@ -132,6 +137,103 @@
       </div>
       <button id="library-summary-back" class="primary-button">К другим книгам</button>
     </section>
+
+    <section id="art-screen" class="screen art-shell hidden">
+      <header class="art-header">
+        <button id="art-home" class="icon-button" aria-label="На главную">‹</button>
+        <div>
+          <span class="section-kicker">WiseCat Culture</span>
+          <h1 id="art-title">Мировое искусство</h1>
+        </div>
+        <b id="art-counter" class="library-counter">0/27</b>
+      </header>
+      <div class="art-controls">
+        <div id="art-age-modes" class="segmented" aria-label="Возрастной режим"></div>
+        <div id="art-languages" class="segmented compact" aria-label="Язык"></div>
+      </div>
+      <div class="art-hero">
+        <div class="art-hero-mark" aria-hidden="true">◉</div>
+        <div>
+          <b id="art-hero-title">Учитесь видеть, сравнивать и объяснять</b>
+          <span id="art-hero-copy">Правильные ответы проверяются на сервере, а прогресс сохраняется.</span>
+        </div>
+      </div>
+      <button id="open-art-diagnostic" class="diagnostic-banner">
+        <span>⌁</span>
+        <span><b id="diagnostic-banner-title">Моя культурная диагностика</b><small id="diagnostic-banner-copy">Сильные темы и следующий шаг</small></span>
+        <i>›</i>
+      </button>
+      <div id="art-modules" class="art-module-list" aria-label="Разделы мирового искусства"></div>
+    </section>
+
+    <section id="art-question-screen" class="screen art-question-layout hidden">
+      <header class="mission-header">
+        <button id="art-question-back" class="icon-button" aria-label="Назад к разделам">‹</button>
+        <div class="progress-wrap">
+          <div class="progress-label"><span id="art-progress-label">1 из 15</span><b id="art-score-label">0</b></div>
+          <div class="progress-track"><div id="art-progress-fill" class="art-progress-fill"></div></div>
+        </div>
+      </header>
+      <div class="art-module-line">
+        <span id="art-question-module">M01</span>
+        <b id="art-question-level">Распознавание</b>
+      </div>
+      <section class="art-question-card">
+        <button id="art-visual-button" class="art-main-visual hidden" aria-label="Увеличить изображение">
+          <img id="art-main-image" alt="">
+          <span id="art-enlarge-label">Увеличить</span>
+        </button>
+        <h2 id="art-question-prompt"></h2>
+      </section>
+      <div id="art-answers" class="art-answers" aria-label="Варианты ответа"></div>
+    </section>
+
+    <section id="art-feedback" class="feedback hidden" aria-live="assertive">
+      <div id="art-feedback-card" class="feedback-card art-feedback-card">
+        <img id="art-feedback-cat" src="/static/assets/cat-correct.webp" alt="Реакция Кота Учёного">
+        <p id="art-feedback-title" class="feedback-title">Верно!</p>
+        <div class="correct-label" id="art-correct-label">Правильный ответ</div>
+        <div id="art-correct-answer" class="correct-word art-correct-answer"></div>
+        <p id="art-explanation" class="library-explanation"></p>
+        <p id="art-points" class="points-line"></p>
+        <button id="art-feedback-next" class="primary-button">Продолжить</button>
+      </div>
+    </section>
+
+    <section id="art-summary" class="screen art-summary hidden">
+      <div class="cat-stage winner"><img id="art-summary-cat" src="/static/assets/cat-winner.webp" alt="Кот Учёный подводит итог"></div>
+      <span class="section-kicker" id="art-summary-kicker">Раздел завершён</span>
+      <h1 id="art-summary-title">Результат</h1>
+      <div class="art-result-score"><b id="art-summary-percent">0%</b><span id="art-summary-verdict">Продолжай исследование</span></div>
+      <div id="art-level-results" class="level-results"></div>
+      <button id="art-summary-diagnostic" class="primary-button">Открыть диагностику</button>
+      <button id="art-summary-back" class="secondary-button">К разделам</button>
+    </section>
+
+    <section id="art-diagnostic" class="screen art-diagnostic hidden">
+      <header class="art-header">
+        <button id="art-diagnostic-back" class="icon-button" aria-label="Назад к разделам">‹</button>
+        <div><span class="section-kicker">WiseCat Culture</span><h1 id="art-diagnostic-title">Итоговая диагностика</h1></div>
+      </header>
+      <div class="diagnostic-score-card">
+        <div class="diagnostic-ring"><b id="diagnostic-overall">0%</b><span id="diagnostic-band">Старт</span></div>
+        <div><b id="diagnostic-progress">0 из 27</b><span id="diagnostic-progress-copy">разделов освоено</span></div>
+      </div>
+      <section class="diagnostic-section">
+        <h2 id="diagnostic-focus-title">На чём сосредоточиться</h2>
+        <div id="diagnostic-focus" class="diagnostic-focus"></div>
+      </section>
+      <section class="diagnostic-section">
+        <h2 id="diagnostic-map-title">Карта культурной грамотности</h2>
+        <div id="diagnostic-map" class="diagnostic-map"></div>
+      </section>
+      <p id="diagnostic-note" class="diagnostic-note">Диагностика отражает освоение учебного банка. Культурная грамотность также развивается через знакомство с оригиналами, чтение и обсуждение.</p>
+    </section>
+
+    <dialog id="art-image-dialog" class="image-dialog">
+      <button id="art-image-close" class="icon-button" aria-label="Закрыть">×</button>
+      <img id="art-dialog-image" alt="">
+    </dialog>
 
     <section id="game-screen" class="screen game-layout hidden">
       <header class="game-header">

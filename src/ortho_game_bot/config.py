@@ -25,6 +25,7 @@ class Settings:
     database_path: Path
     content_path: Path
     leader_library_path: Path
+    art_culture_path: Path
     log_level: str = "INFO"
     round_size: int = 10
     accept_e_for_yo: bool = False
@@ -51,6 +52,12 @@ class Settings:
                 os.getenv(
                     "LEADER_LIBRARY_PATH",
                     "./data/leader_library/content.ru.json",
+                )
+            ),
+            art_culture_path=Path(
+                os.getenv(
+                    "ART_CULTURE_PATH",
+                    "./data/art_culture/content.ru-en-kz.json.gz",
                 )
             ),
             log_level=os.getenv("LOG_LEVEL", "INFO").upper(),

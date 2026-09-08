@@ -9,6 +9,7 @@ from aiogram.enums import ParseMode
 from aiogram.types import BotCommand, MenuButtonWebApp, WebAppInfo
 from dotenv import load_dotenv
 
+from ortho_game_bot.art_culture import ArtCultureContent, ArtCultureRepository
 from ortho_game_bot.config import Settings
 from ortho_game_bot.database import (
     ContentRepository,
@@ -62,6 +63,8 @@ async def main() -> None:
     )
     leader_library = LeaderLibraryContent(settings.leader_library_path)
     leader_library_progress = LeaderLibraryRepository(database)
+    art_culture = ArtCultureContent(settings.art_culture_path)
+    art_culture_progress = ArtCultureRepository(database)
 
     mini_app = MiniAppServer(
         settings=settings,
@@ -70,6 +73,8 @@ async def main() -> None:
         game_service=game_service,
         leader_library=leader_library,
         leader_library_progress=leader_library_progress,
+        art_culture=art_culture,
+        art_culture_progress=art_culture_progress,
     )
     await mini_app.start()
     if settings.webapp_url:

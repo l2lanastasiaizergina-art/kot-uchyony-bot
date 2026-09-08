@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kot-uchyony-bot"
-version = "0.4.0"
+version = "0.5.0"
 description = "«Кот Учёный» — Telegram Mini App с орфографией и Библиотекой лидера"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -33,7 +33,7 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "ortho_game_bot.database.migrations" = ["*.sql"]
-"ortho_game_bot.webapp" = ["static/*", "static/assets/*", "static/assets/word_packs/*"]
+"ortho_game_bot.webapp" = ["static/*", "static/assets/*", "static/assets/word_packs/*", "static/assets/art_culture_packs/*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]

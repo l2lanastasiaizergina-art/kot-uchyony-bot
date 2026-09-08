@@ -18,11 +18,21 @@ const state = {
     reviews: [],
     reviewIndex: 0,
   },
+  art: {
+    ageMode: "teen",
+    language: "ru",
+    catalog: null,
+    session: null,
+    question: null,
+    pending: null,
+    diagnostic: null,
+  },
 };
 const $ = (id) => document.getElementById(id);
 const screens = [
   "loading", "grade-screen", "welcome-screen", "library-screen",
   "library-mission-screen", "library-question-screen", "library-summary",
+  "art-screen", "art-question-screen", "art-summary", "art-diagnostic",
   "game-screen", "summary",
 ];
 const celebrationColors = ["#ffc83d", "#f7942d", "#26b96b", "#5aa9ff", "#e85d9b"];
@@ -426,6 +436,339 @@ function openReviews() {
   renderLibraryQuestion(state.library.reviews[0].question, true);
 }
 
+const artCopy = {
+  ru: {
+    ages: { child: "7–11 лет", teen: "12–15 лет", adult: "16+ / взрослые" },
+    title: "Мировое искусство",
+    heroTitle: "Учитесь видеть, сравнивать и объяснять",
+    heroCopy: "15 заданий в каждом разделе. Прогресс сохраняется автоматически.",
+    diagnostic: "Моя культурная диагностика",
+    diagnosticCopy: "Сильные темы и следующий шаг",
+    start: "Начать",
+    continue: "Продолжить",
+    repeat: "Повторить",
+    mastered: "Освоено",
+    correct: "Верно!",
+    wrong: "Разберём вместе",
+    correctAnswer: "Правильный ответ",
+    next: "Продолжить",
+    completed: "Раздел завершён",
+    diagnosticTitle: "Итоговая диагностика",
+    diagnosticProgress: "разделов освоено",
+    focus: "На чём сосредоточиться",
+    map: "Карта культурной грамотности",
+    note: "Диагностика отражает освоение учебного банка. Культурная грамотность также развивается через знакомство с оригиналами, чтение и обсуждение.",
+    levels: { "1_FOUNDATION": "Понятия", "2_VISUAL": "Визуальное различение", "3_ANALYSIS": "Анализ" },
+    bands: { not_started: "Старт", foundation: "Базовый уровень", developing: "Развивающийся уровень", confident: "Уверенный уровень", mastery: "Целостное освоение" },
+    verdictMastered: "Порог освоения достигнут",
+    verdictLearning: "Есть темы для укрепления",
+    points: (value) => value ? `+${value} к общему счёту` : "Ответ сохранён",
+    result: "Результат",
+    enlarge: "Увеличить",
+  },
+  en: {
+    ages: { child: "Ages 7–11", teen: "Ages 12–15", adult: "16+ / adults" },
+    title: "World Art",
+    heroTitle: "Learn to observe, compare and explain",
+    heroCopy: "15 tasks in each module. Progress is saved automatically.",
+    diagnostic: "My cultural literacy diagnostic",
+    diagnosticCopy: "Strengths and the next learning step",
+    start: "Start",
+    continue: "Continue",
+    repeat: "Retake",
+    mastered: "Mastered",
+    correct: "Correct!",
+    wrong: "Let’s examine it",
+    correctAnswer: "Correct answer",
+    next: "Continue",
+    completed: "Module completed",
+    diagnosticTitle: "Final diagnostic",
+    diagnosticProgress: "modules mastered",
+    focus: "Where to focus next",
+    map: "Cultural literacy map",
+    note: "This diagnostic reflects mastery of the learning bank. Cultural literacy also grows through direct encounters with art, reading and discussion.",
+    levels: { "1_FOUNDATION": "Concepts", "2_VISUAL": "Visual recognition", "3_ANALYSIS": "Analysis" },
+    bands: { not_started: "Start", foundation: "Foundation", developing: "Developing", confident: "Confident", mastery: "Integrated mastery" },
+    verdictMastered: "Mastery threshold reached",
+    verdictLearning: "Some areas need strengthening",
+    points: (value) => value ? `+${value} to your score` : "Answer saved",
+    result: "Result",
+    enlarge: "Enlarge",
+  },
+  kz: {
+    ages: { child: "7–11 жас", teen: "12–15 жас", adult: "16+ / ересектер" },
+    title: "Әлем өнері",
+    heroTitle: "Көруді, салыстыруды және түсіндіруді үйреніңіз",
+    heroCopy: "Әр бөлімде 15 тапсырма. Ілгерілеу автоматты түрде сақталады.",
+    diagnostic: "Менің мәдени диагностикам",
+    diagnosticCopy: "Күшті тақырыптар және келесі қадам",
+    start: "Бастау",
+    continue: "Жалғастыру",
+    repeat: "Қайталау",
+    mastered: "Меңгерілді",
+    correct: "Дұрыс!",
+    wrong: "Бірге талдайық",
+    correctAnswer: "Дұрыс жауап",
+    next: "Жалғастыру",
+    completed: "Бөлім аяқталды",
+    diagnosticTitle: "Қорытынды диагностика",
+    diagnosticProgress: "бөлім меңгерілді",
+    focus: "Неге назар аудару керек",
+    map: "Мәдени сауаттылық картасы",
+    note: "Диагностика оқу қорының меңгерілуін көрсетеді. Мәдени сауаттылық түпнұсқалармен танысу, оқу және талқылау арқылы да дамиды.",
+    levels: { "1_FOUNDATION": "Ұғымдар", "2_VISUAL": "Көрнекі ажырату", "3_ANALYSIS": "Талдау" },
+    bands: { not_started: "Бастау", foundation: "Базалық деңгей", developing: "Даму деңгейі", confident: "Сенімді деңгей", mastery: "Тұтас меңгеру" },
+    verdictMastered: "Меңгеру шегіне жетті",
+    verdictLearning: "Кей тақырыптарды нығайту керек",
+    points: (value) => value ? `Жалпы ұпайға +${value}` : "Жауап сақталды",
+    result: "Нәтиже",
+    enlarge: "Үлкейту",
+  },
+};
+
+function artText() {
+  return artCopy[state.art.language];
+}
+
+function renderArtControls() {
+  const copy = artText();
+  $("art-age-modes").replaceChildren(...Object.entries(copy.ages).map(([mode, label]) => {
+    const button = document.createElement("button");
+    button.textContent = label;
+    button.classList.toggle("is-active", state.art.ageMode === mode);
+    button.addEventListener("click", () => {
+      if (state.art.ageMode === mode) return;
+      state.art.ageMode = mode;
+      loadArtCatalog();
+    });
+    return button;
+  }));
+  $("art-languages").replaceChildren(...["ru", "en", "kz"].map((language) => {
+    const button = document.createElement("button");
+    button.textContent = language.toUpperCase();
+    button.classList.toggle("is-active", state.art.language === language);
+    button.addEventListener("click", () => {
+      if (state.art.language === language) return;
+      state.art.language = language;
+      loadArtCatalog();
+    });
+    return button;
+  }));
+  document.body.classList.toggle("art-child", state.art.ageMode === "child");
+}
+
+function applyArtCopy() {
+  const copy = artText();
+  $("art-title").textContent = copy.title;
+  $("art-hero-title").textContent = copy.heroTitle;
+  $("art-hero-copy").textContent = copy.heroCopy;
+  $("diagnostic-banner-title").textContent = copy.diagnostic;
+  $("diagnostic-banner-copy").textContent = copy.diagnosticCopy;
+  $("art-correct-label").textContent = copy.correctAnswer;
+  $("art-feedback-next").textContent = copy.next;
+  $("art-summary-kicker").textContent = copy.completed;
+  $("art-summary-diagnostic").textContent = copy.diagnostic;
+  $("art-summary-back").textContent = copy.continue;
+  $("art-diagnostic-title").textContent = copy.diagnosticTitle;
+  $("diagnostic-progress-copy").textContent = copy.diagnosticProgress;
+  $("diagnostic-focus-title").textContent = copy.focus;
+  $("diagnostic-map-title").textContent = copy.map;
+  $("diagnostic-note").textContent = copy.note;
+  $("art-enlarge-label").textContent = copy.enlarge;
+}
+
+async function openArt() {
+  if (!state.art.catalog && state.user?.grade) {
+    state.art.ageMode = state.user.grade <= 5 ? "child" : state.user.grade <= 9 ? "teen" : "adult";
+  }
+  await loadArtCatalog();
+}
+
+async function loadArtCatalog() {
+  renderArtControls();
+  applyArtCopy();
+  try {
+    const catalog = await api(`/api/art/modules?age_mode=${state.art.ageMode}&lang=${state.art.language}`);
+    state.art.catalog = catalog;
+    $("art-counter").textContent = `${catalog.mastered_count}/${catalog.total_count}`;
+    renderArtModules(catalog.modules);
+    showScreen("art-screen");
+  } catch (error) { toast(error.message); }
+}
+
+function renderArtModules(modules) {
+  const copy = artText();
+  $("art-modules").replaceChildren(...modules.map((module) => {
+    const button = document.createElement("button");
+    const mastered = module.best?.mastered === true;
+    button.className = `art-module-card ${mastered ? "is-mastered" : ""}`;
+    let status = copy.start;
+    if (module.progress?.status === "active") status = `${module.progress.current}/${module.progress.total}`;
+    else if (mastered) status = `${copy.mastered} ✓`;
+    else if (module.best) status = `${module.best.overall_percent}%`;
+    button.innerHTML = `
+      <span class="art-module-number">${escapeHtml(module.id)}</span>
+      <span class="art-module-copy"><b>${escapeHtml(module.title)}</b><small>${escapeHtml(module.goal)}</small></span>
+      <span class="art-module-status">${escapeHtml(status)}</span>`;
+    button.addEventListener("click", () => startArtModule(module.id));
+    return button;
+  }));
+}
+
+async function startArtModule(moduleId) {
+  try {
+    const data = await api(`/api/art/modules/${moduleId}/start`, {
+      method: "POST",
+      body: JSON.stringify({ age_mode: state.art.ageMode, lang: state.art.language }),
+    });
+    state.art.session = data.session;
+    state.art.question = data.question || null;
+    if (data.summary) showArtSummary(data.summary);
+    else renderArtQuestion();
+    tg?.HapticFeedback?.impactOccurred("light");
+  } catch (error) { toast(error.message); }
+}
+
+function renderArtQuestion() {
+  const q = state.art.question;
+  const session = state.art.session;
+  const copy = artText();
+  $("art-progress-label").textContent = `${q.position + 1} / ${q.total}`;
+  $("art-score-label").textContent = `${session.correct_count} ✓`;
+  $("art-progress-fill").style.width = `${(q.position / q.total) * 100}%`;
+  $("art-question-module").textContent = `${q.module_id} · ${session.module.title}`;
+  $("art-question-level").textContent = copy.levels[q.level];
+  $("art-question-prompt").textContent = q.prompt;
+  const visualButton = $("art-visual-button");
+  visualButton.classList.toggle("hidden", !q.visual);
+  if (q.visual) {
+    $("art-main-image").src = q.visual.image;
+    $("art-main-image").alt = q.visual.alt;
+  }
+  const layout = $("art-question-screen");
+  layout.classList.toggle("is-visual-options", q.format === "VISUAL_4_OPTIONS");
+  layout.classList.toggle("is-text-question", q.format !== "VISUAL_4_OPTIONS");
+  $("art-answers").replaceChildren(...q.options.map((option, index) => {
+    const button = document.createElement("button");
+    button.className = `art-answer-button ${option.image ? "has-image" : ""}`;
+    if (option.image) {
+      const image = document.createElement("img");
+      image.src = option.image;
+      image.alt = option.alt || option.text;
+      button.append(image);
+    }
+    const label = document.createElement("b");
+    label.textContent = option.image ? String.fromCharCode(65 + index) : `${String.fromCharCode(65 + index)}. ${option.text}`;
+    button.append(label);
+    button.addEventListener("click", () => submitArtAnswer(option.id));
+    return button;
+  }));
+  showScreen("art-question-screen");
+}
+
+async function submitArtAnswer(optionId) {
+  document.querySelectorAll(".art-answer-button").forEach((button) => { button.disabled = true; });
+  try {
+    const data = await api("/api/art/answer", {
+      method: "POST",
+      body: JSON.stringify({
+        session_id: state.art.session.id,
+        question_id: state.art.question.id,
+        option_id: optionId,
+      }),
+    });
+    state.art.pending = data;
+    showArtFeedback(data);
+  } catch (error) {
+    toast(error.message);
+    document.querySelectorAll(".art-answer-button").forEach((button) => { button.disabled = false; });
+  }
+}
+
+function showArtFeedback(result) {
+  const copy = artText();
+  const card = $("art-feedback-card");
+  card.classList.remove("is-correct", "is-wrong");
+  card.classList.add(result.is_correct ? "is-correct" : "is-wrong");
+  $("art-feedback-cat").src = `/static/assets/cat-${result.is_correct ? "correct" : "support"}.webp`;
+  $("art-feedback-title").textContent = result.is_correct ? copy.correct : copy.wrong;
+  $("art-correct-answer").textContent = result.correct_answer;
+  $("art-explanation").textContent = result.explanation;
+  $("art-points").textContent = copy.points(result.points);
+  $("art-feedback").classList.remove("hidden");
+  tg?.HapticFeedback?.notificationOccurred(result.is_correct ? "success" : "warning");
+}
+
+function nextArtQuestion() {
+  const result = state.art.pending;
+  $("art-feedback").classList.add("hidden");
+  if (Number.isInteger(result.total_score)) state.user.total_score = result.total_score;
+  state.art.session.correct_count = result.correct_count;
+  if (result.finished) {
+    showArtSummary(result.summary);
+    return;
+  }
+  state.art.session.position = result.position;
+  state.art.question = result.next_question;
+  renderArtQuestion();
+}
+
+function showArtSummary(summary) {
+  const copy = artText();
+  $("art-summary-title").textContent = `${state.art.session?.module?.title || copy.result}`;
+  $("art-summary-percent").textContent = `${summary.overall_percent}%`;
+  $("art-summary-verdict").textContent = summary.mastered ? copy.verdictMastered : copy.verdictLearning;
+  $("art-summary-cat").src = `/static/assets/cat-${summary.mastered ? "winner" : "support"}.webp`;
+  $("art-level-results").replaceChildren(...Object.entries(summary.level_scores).map(([level, score]) => {
+    const row = document.createElement("div");
+    const levelKey = { foundation: "1_FOUNDATION", visual: "2_VISUAL", analysis: "3_ANALYSIS" }[level];
+    row.className = "level-result";
+    row.innerHTML = `<span>${escapeHtml(copy.levels[levelKey])}</span><b>${score.correct}/${score.total} · ${score.percent}%</b><div class="level-result-track"><i style="width:${score.percent}%"></i></div>`;
+    return row;
+  }));
+  showScreen("art-summary");
+}
+
+async function openArtDiagnostic() {
+  applyArtCopy();
+  try {
+    const data = await api(`/api/art/diagnostic?age_mode=${state.art.ageMode}&lang=${state.art.language}`);
+    state.art.diagnostic = data;
+    renderArtDiagnostic(data);
+    showScreen("art-diagnostic");
+  } catch (error) { toast(error.message); }
+}
+
+function renderArtDiagnostic(data) {
+  const copy = artText();
+  $("diagnostic-overall").textContent = `${data.overall_percent}%`;
+  $("diagnostic-band").textContent = copy.bands[data.band];
+  $("diagnostic-progress").textContent = `${data.mastered_count} / ${data.total_count}`;
+  $("diagnostic-focus").replaceChildren(...data.focus_modules.map((module) => {
+    const card = document.createElement("button");
+    card.className = "focus-card";
+    card.innerHTML = `<span>${escapeHtml(module.id)}</span><b>${escapeHtml(module.title)}</b><em>${module.result ? `${module.result.overall_percent}%` : copy.start}</em>`;
+    card.addEventListener("click", () => startArtModule(module.id));
+    return card;
+  }));
+  $("diagnostic-map").replaceChildren(...data.modules.map((module) => {
+    const cell = document.createElement("button");
+    const result = module.result;
+    cell.className = `diagnostic-cell ${result?.mastered ? "is-mastered" : result ? "is-focus" : ""}`;
+    cell.innerHTML = `<b>${escapeHtml(module.id)}</b><span>${result ? `${result.overall_percent}%` : "—"}</span>`;
+    cell.title = module.title;
+    cell.addEventListener("click", () => startArtModule(module.id));
+    return cell;
+  }));
+}
+
+function openArtImage() {
+  if (!state.art.question?.visual) return;
+  $("art-dialog-image").src = state.art.question.visual.image;
+  $("art-dialog-image").alt = state.art.question.visual.alt;
+  $("art-image-dialog").showModal();
+}
+
 async function bootstrap() {
   renderGrades();
   try {
@@ -440,6 +783,16 @@ async function bootstrap() {
 
 $("start-game").addEventListener("click", startGame);
 $("open-library").addEventListener("click", openLibrary);
+$("open-art").addEventListener("click", openArt);
+$("art-home").addEventListener("click", openWelcome);
+$("art-question-back").addEventListener("click", loadArtCatalog);
+$("open-art-diagnostic").addEventListener("click", openArtDiagnostic);
+$("art-feedback-next").addEventListener("click", nextArtQuestion);
+$("art-summary-diagnostic").addEventListener("click", openArtDiagnostic);
+$("art-summary-back").addEventListener("click", loadArtCatalog);
+$("art-diagnostic-back").addEventListener("click", loadArtCatalog);
+$("art-visual-button").addEventListener("click", openArtImage);
+$("art-image-close").addEventListener("click", () => $("art-image-dialog").close());
 $("library-home").addEventListener("click", openWelcome);
 $("mission-back").addEventListener("click", openLibrary);
 $("question-back").addEventListener("click", () => state.library.phase === "review" ? openLibrary() : showLibraryStory());
