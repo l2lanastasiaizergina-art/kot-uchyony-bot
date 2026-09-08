@@ -25,8 +25,8 @@ button { font: inherit; touch-action: manipulation; }
 
 .cat-stage { position: relative; display: grid; place-items: center; overflow: hidden; background: radial-gradient(circle at 50% 45%, #fff6dd 0 35%, #ffe3aa 70%, #ffd181 100%); border-radius: 28px; }
 .cat-stage img { display: block; width: auto; height: calc(100% - 8px); max-width: 96%; object-fit: contain; object-position: center; mix-blend-mode: multiply; transform-origin: 50% 86%; animation: cat-curious 3.4s ease-in-out infinite; }
-.cat-stage.welcome { height: min(30svh, 250px); margin-top: 14px; background: #fff0c7; }
-.cat-stage.welcome img { height: 100%; max-width: 100%; }
+.cat-stage.welcome { height: min(30svh, 250px); margin-top: 14px; isolation: isolate; background: #fff0c7 url("/static/assets/cat-home-visible-v2.webp") center / contain no-repeat; }
+.cat-stage.welcome img { position: relative; z-index: 1; display: block; width: 100%; height: 100%; max-width: 100%; object-fit: contain; object-position: center; mix-blend-mode: normal; animation: welcome-cat-float 3.4s ease-in-out infinite; }
 .cat-stage.winner { height: min(42svh, 340px); }
 .cat-stage.reaction img { animation: cat-hop .62s cubic-bezier(.2, 1.55, .45, 1); }
 .cat-stage.wrong img { animation: cat-grimace .78s ease-in-out; }
@@ -317,6 +317,11 @@ body.art-child .art-question-card h2 { font-size: clamp(20px, 5.3vw, 26px); }
 .english-result-score b { color: #ffcf55; font-size: 42px; }
 .english-result-score span { font-weight: 850; }
 
+@keyframes welcome-cat-float {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  35% { transform: translate3d(0, -4px, 0) rotate(-1deg); }
+  70% { transform: translate3d(0, -2px, 0) rotate(1deg); }
+}
 @keyframes cat-curious {
   0%, 100% { transform: translateY(0) rotate(0) scale(1); }
   20% { transform: translateY(-3px) rotate(-1.6deg) scale(1.01); }
