@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kot-uchyony-bot"
+version = "0.2.0"
+description = "«Кот Учёный» — Telegram-бот для орфографической игры 1–11 классов"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Kot Uchyony contributors"}]
+dependencies = [
+  "aiogram>=3.31,<4",
+  "python-dotenv>=1.1,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+  "pytest-asyncio>=0.25,<1",
+  "ruff>=0.11,<1",
+]
+
+[project.scripts]
+orthogame = "ortho_game_bot.app:run"
+orthogame-init-db = "ortho_game_bot.cli:init_db"
+orthogame-import-content = "ortho_game_bot.cli:import_content"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ortho_game_bot.database.migrations" = ["*.sql"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
