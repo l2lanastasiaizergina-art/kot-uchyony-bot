@@ -25,7 +25,7 @@ button { font: inherit; touch-action: manipulation; }
 
 .cat-stage { position: relative; display: grid; place-items: center; overflow: hidden; background: radial-gradient(circle at 50% 45%, #fff6dd 0 35%, #ffe3aa 70%, #ffd181 100%); border-radius: 28px; }
 .cat-stage img { display: block; width: auto; height: calc(100% - 8px); max-width: 96%; object-fit: contain; object-position: center; mix-blend-mode: multiply; transform-origin: 50% 86%; animation: cat-curious 3.4s ease-in-out infinite; }
-.cat-stage.welcome { height: min(34svh, 290px); margin-top: 14px; }
+.cat-stage.welcome { height: min(30svh, 250px); margin-top: 14px; background: #fff0c7; }\n.cat-stage.welcome img { height: 100%; max-width: 100%; }
 .cat-stage.winner { height: min(42svh, 340px); }
 .cat-stage.reaction img { animation: cat-hop .62s cubic-bezier(.2, 1.55, .45, 1); }
 .cat-stage.wrong img { animation: cat-grimace .78s ease-in-out; }
