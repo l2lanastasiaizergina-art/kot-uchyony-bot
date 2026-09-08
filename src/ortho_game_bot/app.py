@@ -1,0 +1,74 @@
+from __future__ import annotations
+
+import asyncio
+import logging
+
+from aiogram import Bot, Dispatcher
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
+from aiogram.types import BotCommand
+from dotenv import load_dotenv
+
+from ortho_game_bot.config import Settings
+from ortho_game_bot.database import (
+    ContentRepository,
+    Database,
+    GameRepository,
+    UserRepository,
+)
+from ortho_game_bot.game.service import GameService
+from ortho_game_bot.handlers import common_router, game_router
+from ortho_game_bot.logging_config import configure_logging
+from ortho_game_bot.middlewares import RateLimitMiddleware
+
+logger = logging.getLogger(__name__)
+
+
+async def main() -> None:
+    load_dotenv()
+    settings = Settings.from_env()
+    configure_logging(settings.log_level)
+
+    database = Database(settings.database_path)
+    await database.migrate()
+    content = ContentRepository(database)
+    imported = await content.import_directory(settings.content_path)
+    logger.info("Контент готов: добавлено %s новых слов", imported)
+
+    bot = Bot(
+        token=settings.bot_token,
+        default=DefaultBotProperties(parse_mode=ParseMode.HTML),
+    )
+    await bot.set_my_commands(
+        [
+            BotCommand(command="start", description="Открыть главное меню"),
+            BotCommand(command="profile", description="Моя статистика"),
+            BotCommand(command="leaderboard", description="Топ-10 игроков"),
+        ]
+    )
+    dispatcher = Dispatcher()
+    dispatcher.message.outer_middleware(RateLimitMiddleware())
+    dispatcher.callback_query.outer_middleware(RateLimitMiddleware())
+    dispatcher.include_router(game_router)
+    dispatcher.include_router(common_router)
+
+    users = UserRepository(database)
+    game_service = GameService(
+        content,
+        GameRepository(database),
+        round_size=settings.round_size,
+    )
+
+    logger.info("Бот запущен в режиме long polling")
+    await dispatcher.start_polling(
+        bot,
+        users=users,
+        content=content,
+        game_service=game_service,
+        settings=settings,
+        allowed_updates=dispatcher.resolve_used_update_types(),
+    )
+
+
+def run() -> None:
+    asyncio.run(main())
