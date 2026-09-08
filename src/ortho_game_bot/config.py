@@ -33,11 +33,17 @@ class Settings:
     webapp_url: str | None = None
     port: int = 8080
     webapp_demo: bool = False
+    bot_polling_enabled: bool = True
 
     @classmethod
     def from_env(cls, *, require_token: bool = True) -> Settings:
         token = os.getenv("BOT_TOKEN", "").strip()
-        if require_token and not token:
+        webapp_demo = _parse_bool(os.getenv("WEBAPP_DEMO", "false"))
+        bot_polling_enabled = _parse_bool(
+            os.getenv("BOT_POLLING_ENABLED", "true")
+        )
+        token_is_required = bot_polling_enabled or not webapp_demo
+        if require_token and token_is_required and not token:
             raise RuntimeError("Не задан BOT_TOKEN. Скопируйте .env.example в .env.")
 
         round_size = int(os.getenv("ROUND_SIZE", "10"))
@@ -72,5 +78,6 @@ class Settings:
             accept_e_for_yo=_parse_bool(os.getenv("ACCEPT_E_FOR_YO", "false")),
             webapp_url=os.getenv("WEBAPP_URL", "").strip() or None,
             port=int(os.getenv("PORT", "8080")),
-            webapp_demo=_parse_bool(os.getenv("WEBAPP_DEMO", "false")),
+            webapp_demo=webapp_demo,
+            bot_polling_enabled=bot_polling_enabled,
         )

@@ -39,23 +39,6 @@ async def main() -> None:
     imported = await content.import_directory(settings.content_path)
     logger.info("Контент готов: добавлено %s новых слов", imported)
 
-    bot = Bot(
-        token=settings.bot_token,
-        default=DefaultBotProperties(parse_mode=ParseMode.HTML),
-    )
-    await bot.set_my_commands(
-        [
-            BotCommand(command="start", description="Открыть главное меню"),
-            BotCommand(command="profile", description="Моя статистика"),
-            BotCommand(command="leaderboard", description="Топ-10 игроков"),
-        ]
-    )
-    dispatcher = Dispatcher()
-    dispatcher.message.outer_middleware(RateLimitMiddleware())
-    dispatcher.callback_query.outer_middleware(RateLimitMiddleware())
-    dispatcher.include_router(game_router)
-    dispatcher.include_router(common_router)
-
     users = UserRepository(database)
     game_service = GameService(
         content,
@@ -82,6 +65,31 @@ async def main() -> None:
         ai_course_progress=ai_course_progress,
     )
     await mini_app.start()
+    if not settings.bot_polling_enabled:
+        logger.info("Mini App запущен без Telegram polling")
+        try:
+            await asyncio.Event().wait()
+        finally:
+            await mini_app.stop()
+        return
+
+    bot = Bot(
+        token=settings.bot_token,
+        default=DefaultBotProperties(parse_mode=ParseMode.HTML),
+    )
+    await bot.set_my_commands(
+        [
+            BotCommand(command="start", description="Открыть главное меню"),
+            BotCommand(command="profile", description="Моя статистика"),
+            BotCommand(command="leaderboard", description="Топ-10 игроков"),
+        ]
+    )
+    dispatcher = Dispatcher()
+    dispatcher.message.outer_middleware(RateLimitMiddleware())
+    dispatcher.callback_query.outer_middleware(RateLimitMiddleware())
+    dispatcher.include_router(game_router)
+    dispatcher.include_router(common_router)
+
     if settings.webapp_url:
         await bot.set_chat_menu_button(
             menu_button=MenuButtonWebApp(
@@ -102,6 +110,7 @@ async def main() -> None:
         )
     finally:
         await mini_app.stop()
+        await bot.session.close()
 
 
 def run() -> None:

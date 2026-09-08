@@ -66,6 +66,7 @@ cp .env.example .env
 BOT_TOKEN=1234567890:replace_with_botfather_token
 ADMIN_IDS=123456789,987654321
 WEBAPP_URL=https://your-public-domain.example
+BOT_POLLING_ENABLED=true
 LEADER_LIBRARY_PATH=./data/leader_library/content.ru.json
 ART_CULTURE_PATH=./data/art_culture/content.ru-en-kz.json.gz
 AI_COURSE_PATH=./data/ai_course/content.ru.json.gz
@@ -93,6 +94,12 @@ python scripts/preview_webapp.py
 
 Затем откройте `http://127.0.0.1:8080`. Режим предпросмотра использует только
 локальную тестовую учётную запись и не должен включаться на production.
+
+Для изолированного визуального QA на сервере используйте
+`WEBAPP_DEMO=true` и `BOT_POLLING_ENABLED=false`. Такой стенд не запускает
+Telegram long polling и поэтому не конфликтует с production-ботом. Чтобы
+подключить полноценный тестовый Telegram-контур, задайте отдельный `BOT_TOKEN`,
+верните `WEBAPP_DEMO=false` и включите `BOT_POLLING_ENABLED=true`.
 
 Либо через Docker:
 
