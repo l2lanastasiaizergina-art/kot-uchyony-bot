@@ -28,10 +28,109 @@
         <img src="/static/assets/cat-welcome-full.webp" alt="Кот Учёный машет лапой в полный рост">
       </div>
       <div class="speech-card">
-        <h1>Готов к орфографическому челленджу?</h1>
-        <p id="welcome-copy">10 слов — и ты станешь ещё грамотнее!</p>
+        <h1>Чему учимся сегодня?</h1>
+        <p id="welcome-copy">Выбери своё приключение с Котом Учёным</p>
       </div>
-      <button id="start-game" class="primary-button">Начать игру</button>
+      <div class="module-grid">
+        <button id="start-game" class="module-card ortho-module">
+          <span class="module-icon">✍️</span>
+          <span><b>Орфография</b><small>10 слов за один раунд</small></span>
+          <i>›</i>
+        </button>
+        <button id="open-library" class="module-card library-module">
+          <span class="module-icon">📚</span>
+          <span><b>Библиотека лидера</b><small>100 книг — 600 решений</small></span>
+          <i>›</i>
+        </button>
+      </div>
+    </section>
+
+    <section id="library-screen" class="screen library-shell hidden">
+      <header class="library-header">
+        <button id="library-home" class="icon-button" aria-label="На главную">‹</button>
+        <div>
+          <span class="section-kicker">Кот Учёный</span>
+          <h1>Библиотека лидера</h1>
+        </div>
+        <b id="library-counter" class="library-counter">0/10</b>
+      </header>
+      <div class="library-hero">
+        <img src="/static/assets/cat-idle.webp" alt="Кот Учёный с книгами">
+        <div><b>100 книг — 600 решений</b><span>Начни с первого зала: мышление и личная сила</span></div>
+      </div>
+      <button id="open-reviews" class="review-banner hidden">
+        <span>⏳</span><span><b>Пора повторить</b><small id="review-count">Есть задания для памяти</small></span><i>›</i>
+      </button>
+      <div id="library-books" class="book-list" aria-label="Книги первого зала"></div>
+    </section>
+
+    <section id="library-mission-screen" class="screen library-mission-layout hidden">
+      <header class="mission-header">
+        <button id="mission-back" class="icon-button" aria-label="Назад к книгам">‹</button>
+        <div class="progress-wrap">
+          <div class="progress-label"><span id="mission-progress-label">Эпизод 1 из 8</span><b id="mission-score">0/8</b></div>
+          <div class="progress-track"><div id="mission-progress-fill" class="library-progress-fill"></div></div>
+        </div>
+      </header>
+      <div id="mission-cat-stage" class="cat-stage mission-cat-stage">
+        <img id="mission-cat" src="/static/assets/cat-idle.webp" alt="Кот Учёный читает историю">
+      </div>
+      <div class="mission-book-line">
+        <span id="mission-book-number">Книга 001</span>
+        <b id="mission-book-title">Название книги</b>
+      </div>
+      <article class="story-card">
+        <span id="story-eyebrow" class="story-eyebrow">Принцип</span>
+        <h2 id="story-title">Эпизод 1</h2>
+        <p id="story-text"></p>
+      </article>
+      <button id="library-to-question" class="primary-button">К вопросу</button>
+    </section>
+
+    <section id="library-question-screen" class="screen library-question-layout hidden">
+      <header class="mission-header">
+        <button id="question-back" class="icon-button" aria-label="Вернуться к истории">‹</button>
+        <div class="progress-wrap">
+          <div class="progress-label"><span id="question-progress-label">Вопрос 1 из 8</span><b id="question-score">0/8</b></div>
+          <div class="progress-track"><div id="question-progress-fill" class="library-progress-fill"></div></div>
+        </div>
+      </header>
+      <div class="question-cat-row">
+        <img id="question-cat" src="/static/assets/cat-hint.webp" alt="Кот Учёный размышляет">
+        <span id="question-cat-message">Выбери самый точный ответ</span>
+      </div>
+      <section class="question-card">
+        <span id="question-kind" class="story-eyebrow">Понимаю</span>
+        <h2 id="library-question-prompt"></h2>
+      </section>
+      <div id="library-answers" class="library-answers" aria-label="Варианты ответа"></div>
+    </section>
+
+    <section id="library-feedback" class="feedback hidden" aria-live="assertive">
+      <div id="library-feedback-card" class="feedback-card library-feedback-card">
+        <div id="library-feedback-celebration" class="celebration" aria-hidden="true"></div>
+        <img id="library-feedback-cat" src="/static/assets/cat-correct.webp" alt="Реакция Кота Учёного">
+        <p id="library-feedback-title" class="feedback-title">Верно!</p>
+        <p id="library-selected-answer" class="selected-answer hidden"></p>
+        <div id="library-correct-wrap">
+          <div class="correct-label">Правильный ответ</div>
+          <div id="library-correct-answer" class="correct-word library-correct-answer"></div>
+        </div>
+        <p id="library-explanation" class="library-explanation"></p>
+        <p id="library-points" class="points-line"></p>
+        <button id="library-feedback-next" class="primary-button">Продолжить</button>
+      </div>
+    </section>
+
+    <section id="library-summary" class="screen hidden">
+      <div class="cat-stage winner"><img src="/static/assets/cat-winner.webp" alt="Кот Учёный празднует"></div>
+      <span class="section-kicker">Миссия завершена</span>
+      <h1 id="library-summary-title">Книга пройдена!</h1>
+      <div class="summary-card library-summary-card">
+        <div><span>С первой попытки</span><b id="library-summary-score">0/8</b></div>
+        <div class="action-row"><span>Шаг на 24 часа</span><b id="library-action"></b></div>
+      </div>
+      <button id="library-summary-back" class="primary-button">К другим книгам</button>
     </section>
 
     <section id="game-screen" class="screen game-layout hidden">

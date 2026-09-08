@@ -8,6 +8,7 @@ from pathlib import Path
 from ortho_game_bot.config import Settings
 from ortho_game_bot.database import ContentRepository, Database, GameRepository, UserRepository
 from ortho_game_bot.game.service import GameService
+from ortho_game_bot.leader_library import LeaderLibraryContent, LeaderLibraryRepository
 from ortho_game_bot.webapp import MiniAppServer
 
 
@@ -23,6 +24,7 @@ async def main() -> None:
         admin_ids=frozenset(),
         database_path=Path("var/preview.sqlite3"),
         content_path=Path("data/words"),
+        leader_library_path=Path("data/leader_library/content.ru.json"),
         webapp_demo=True,
         port=8080,
     )
@@ -31,6 +33,8 @@ async def main() -> None:
         users=users,
         content=content,
         game_service=service,
+        leader_library=LeaderLibraryContent(settings.leader_library_path),
+        leader_library_progress=LeaderLibraryRepository(database),
     )
     await server.start()
     print("Mini App preview: http://127.0.0.1:8080")

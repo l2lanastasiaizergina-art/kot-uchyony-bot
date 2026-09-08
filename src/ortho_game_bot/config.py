@@ -24,6 +24,7 @@ class Settings:
     admin_ids: frozenset[int]
     database_path: Path
     content_path: Path
+    leader_library_path: Path
     log_level: str = "INFO"
     round_size: int = 10
     accept_e_for_yo: bool = False
@@ -46,6 +47,12 @@ class Settings:
             admin_ids=_parse_admin_ids(os.getenv("ADMIN_IDS", "")),
             database_path=Path(os.getenv("DATABASE_PATH", "./var/orthogame.sqlite3")),
             content_path=Path(os.getenv("CONTENT_PATH", "./data/words")),
+            leader_library_path=Path(
+                os.getenv(
+                    "LEADER_LIBRARY_PATH",
+                    "./data/leader_library/content.ru.json",
+                )
+            ),
             log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
             round_size=round_size,
             accept_e_for_yo=_parse_bool(os.getenv("ACCEPT_E_FOR_YO", "false")),
