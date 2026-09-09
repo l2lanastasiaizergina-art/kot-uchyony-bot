@@ -13,6 +13,7 @@ from ortho_game_bot.database.models import (
 from ortho_game_bot.database.repositories import ContentRepository
 
 from .distractors import generate_choice_options
+from .levels import level_for_grade
 
 
 class ContentUnavailableError(RuntimeError):
@@ -44,10 +45,16 @@ class GameService:
         self.round_size = round_size
 
     async def start_choice_round(self, *, user_id: int, grade: int) -> ChoiceQuestion:
-        words = await self.content.sample_words(grade=grade, limit=self.round_size)
+        level = level_for_grade(grade)
+        words = await self.content.sample_words(
+            grade_min=level.min_grade,
+            grade_max=level.max_grade,
+            max_difficulty=level.max_difficulty,
+            limit=self.round_size,
+        )
         if len(words) < self.round_size:
             raise ContentUnavailableError(
-                f"Для {grade} класса найдено только {len(words)} слов из {self.round_size}"
+                f"На уровне {level.code} найдено только {len(words)} слов из {self.round_size}"
             )
         questions = [
             (

@@ -25,6 +25,23 @@ class DistractorTests(unittest.TestCase):
                 checked += 1
         self.assertEqual(checked, 1543)
 
+    def test_common_words_use_plausible_misspellings(self) -> None:
+        options = generate_choice_options(
+            "корова",
+            [{"start": 1, "end": 2, "text": "о"}],
+            seed="cow",
+        )
+        self.assertEqual(set(options), {"корова", "карова", "корава", "корово"})
+
+    def test_yo_is_a_meaningful_orthographic_choice(self) -> None:
+        options = generate_choice_options(
+            "берёза",
+            [{"start": 1, "end": 2, "text": "е"}],
+            seed="birch",
+        )
+        self.assertIn("берёза", options)
+        self.assertIn("береза", options)
+
 
 if __name__ == "__main__":
     unittest.main()

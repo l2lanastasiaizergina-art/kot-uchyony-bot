@@ -113,9 +113,13 @@ h1 { margin: 8px 0; color: var(--navy); font-size: clamp(25px, 7vw, 34px); line-
 
 .compact-cat { height: 27svh; display: grid; place-items: center; overflow: hidden; background: #ffe5ad; border-radius: 28px; }
 .compact-cat img { width: auto; height: calc(100% - 8px); max-width: 96%; object-fit: contain; mix-blend-mode: multiply; }
-.grade-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 20px; }
-.grade-button { min-height: 64px; border: 3px solid #dfe7ef; border-radius: 18px; background: white; color: var(--navy); font-size: 19px; font-weight: 950; }
-.grade-button:active { background: #eaf6ff; border-color: var(--navy-2); }
+.grade-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.grade-button { min-width: 0; min-height: 78px; display: grid; grid-template-columns: 43px minmax(0, 1fr); align-items: center; gap: 9px; border: 3px solid #dfe7ef; border-radius: 18px; background: white; color: var(--navy); padding: 9px; text-align: left; box-shadow: 0 4px 0 #cad7e1; }
+.grade-button > span:first-child { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; background: #fff0cf; color: #955407; font-size: 16px; font-weight: 1000; }
+.grade-button > span:last-child { min-width: 0; display: grid; gap: 3px; }
+.grade-button b { font-size: clamp(15px, 4vw, 18px); line-height: 1.05; }
+.grade-button small { color: var(--muted); font-size: clamp(10px, 2.7vw, 12px); font-weight: 750; line-height: 1.15; }
+.grade-button:active { transform: translateY(3px); background: #eaf6ff; border-color: var(--navy-2); box-shadow: 0 1px 0 #cad7e1; }
 
 .game-layout { height: 100svh; min-height: 0; display: flex; flex-direction: column; gap: clamp(8px, 1.25svh, 12px); overflow: hidden; padding-top: max(8px, env(safe-area-inset-top), var(--tg-content-safe-area-inset-top, 0px)); padding-bottom: max(10px, env(safe-area-inset-bottom)); }
 .game-header { display: flex; flex: 0 0 auto; gap: 12px; align-items: center; min-height: 44px; }

@@ -349,22 +349,38 @@ class ContentRepository:
         )
         return str(row["word"]) if row else None
 
-    async def sample_words(self, *, grade: int, limit: int) -> list[GameWord]:
-        if not 1 <= grade <= 11:
-            raise ValueError("Класс должен быть от 1 до 11")
+    async def sample_words(
+        self,
+        *,
+        limit: int,
+        grade: int | None = None,
+        grade_min: int | None = None,
+        grade_max: int | None = None,
+        max_difficulty: int | None = None,
+    ) -> list[GameWord]:
+        if grade is not None:
+            grade_min = grade_max = grade
+        if grade_min is None or grade_max is None:
+            raise ValueError("Нужно указать класс или диапазон уровней")
+        if not 1 <= grade_min <= grade_max <= 11:
+            raise ValueError("Диапазон программы должен быть от 1 до 11")
         if not 1 <= limit <= 30:
             raise ValueError("Количество заданий должно быть от 1 до 30")
+        if max_difficulty is not None and not 1 <= max_difficulty <= 3:
+            raise ValueError("Сложность должна быть от 1 до 3")
         rows = await self.database.read_all(
             """
             SELECT w.id, w.external_id, w.grade, w.group_name, w.rule_text,
                    w.word, w.orthograms_json
             FROM words w
             JOIN content_packs p ON p.id = w.pack_id
-            WHERE w.grade = ? AND w.is_active = 1 AND p.is_active = 1
+            WHERE w.grade BETWEEN ? AND ?
+              AND (? IS NULL OR w.difficulty <= ?)
+              AND w.is_active = 1 AND p.is_active = 1
             ORDER BY RANDOM()
             LIMIT ?
             """,
-            (grade, limit),
+            (grade_min, grade_max, max_difficulty, max_difficulty, limit),
         )
         result = [
             GameWord(

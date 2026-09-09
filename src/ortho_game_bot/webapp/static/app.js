@@ -110,13 +110,33 @@ function setCat(name, phrase, reaction = "reaction") {
   stage.classList.add(reaction);
 }
 
+const orthographyLevels = [
+  { code: "A0", title: "С нуля", anchor: 1, hint: "Подготовительный уровень" },
+  { code: "A1", title: "Начальный", anchor: 2, hint: "Программа 1–2 классов" },
+  { code: "A2", title: "Базовый", anchor: 4, hint: "Программа 3–4 классов" },
+  { code: "B1", title: "Уверенный", anchor: 7, hint: "Программа 5–7 классов" },
+  { code: "B2", title: "Продвинутый", anchor: 9, hint: "Программа 8–9 классов" },
+  { code: "C1", title: "Мастер", anchor: 11, hint: "Программа 10–11 классов" },
+];
+
+function orthographyLevelForGrade(grade) {
+  return orthographyLevels.find((level) => grade <= level.anchor) || orthographyLevels.at(-1);
+}
+
 function renderGrades() {
-  $("grades").replaceChildren(...Array.from({ length: 11 }, (_, index) => {
-    const grade = index + 1;
+  $("grades").replaceChildren(...orthographyLevels.map((level) => {
     const button = document.createElement("button");
     button.className = "grade-button";
-    button.textContent = `${grade} класс`;
-    button.addEventListener("click", () => chooseGrade(grade));
+    const code = document.createElement("span");
+    code.textContent = level.code;
+    const copy = document.createElement("span");
+    const title = document.createElement("b");
+    title.textContent = level.title;
+    const hint = document.createElement("small");
+    hint.textContent = level.hint;
+    copy.append(title, hint);
+    button.append(code, copy);
+    button.addEventListener("click", () => chooseGrade(level.anchor));
     return button;
   }));
 }
@@ -132,9 +152,10 @@ async function chooseGrade(grade) {
 }
 
 function openWelcome() {
-  document.body.classList.toggle("junior", state.user.grade <= 2);
+  const level = orthographyLevelForGrade(state.user.grade);
+  document.body.classList.toggle("junior", level.anchor <= 2);
   $("welcome-score").textContent = `${state.user.total_score} ⭐`;
-  $("welcome-copy").textContent = "Выбери своё приключение с Котом Учёным";
+  $("welcome-copy").textContent = `Уровень ${level.code} · ${level.title}. Выбери своё приключение`;
   showScreen("welcome-screen");
 }
 
